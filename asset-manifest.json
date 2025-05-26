@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/ilyrian-trails/static/css/main.52c5d385.css",
+    "main.js": "/ilyrian-trails/static/js/main.9f197130.js",
+    "static/media/banner.jpg": "/ilyrian-trails/static/media/banner.4afc4bf701fe215908fc.jpg",
+    "static/media/car.jpg": "/ilyrian-trails/static/media/car.55aedc4773038ab5145f.jpg",
+    "static/media/Questrial-Regular.ttf": "/ilyrian-trails/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
+    "static/media/404.png": "/ilyrian-trails/static/media/404.27df96fefd06d8c3b5b0.png",
+    "static/media/flights.jpg": "/ilyrian-trails/static/media/flights.d7cdda286e36077667a4.jpg",
+    "index.html": "/ilyrian-trails/index.html",
+    "main.52c5d385.css.map": "/ilyrian-trails/static/css/main.52c5d385.css.map",
+    "main.9f197130.js.map": "/ilyrian-trails/static/js/main.9f197130.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52c5d385.css",
+    "static/js/main.9f197130.js"
+  ]
+}
