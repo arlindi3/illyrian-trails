@@ -14,7 +14,7 @@ const BookedPlaceDetails = () => {
       </div>
       <div className="mt-4">
         <img
-          src="/images/place (24).jpg"
+          src={`${process.env.PUBLIC_URL}/images/place (24).jpg`}
           alt=""
           className="w-full h-[150px] object-cover rounded-lg"
         />

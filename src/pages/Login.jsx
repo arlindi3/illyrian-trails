@@ -22,7 +22,11 @@ const Login = () => {
             href="www.google.com"
             className="btn w-full sm:w-fit border dark:border-dark flex-align-center rounded-md gap-x-2 !opacity-100"
           >
-            <img src="/images/google.png" alt="" width={15} />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/google.png`}
+              alt=""
+              width={15}
+            />
             <p>Sign in with Google</p>
           </a>
           <a

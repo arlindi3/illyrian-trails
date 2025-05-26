@@ -4,7 +4,7 @@ const ProfileInfo = () => {
     <div className="bg-white p-4 border dark:bg-card-dark dark:border-dark rounded-lg">
       <div className="w-20 h-20 relative mx-auto">
         <img
-          src="/images/avatar.png"
+          src={`${process.env.PUBLIC_URL}/images/avatar.png`}
           alt=""
           className="w-full h-full rounded-full object-cover"
         />

@@ -12,7 +12,7 @@ const Deals = () => {
       <div className="flex flex-wrap gap-8">
         <div className="flex-1 basis-[18rem]">
           <img
-            src="/images/flights/airplane.png"
+            src={`${process.env.PUBLIC_URL}/images/flights/airplane.png`}
             alt=""
             className="sm:h-[600px] sm:w-[600px] object-contain mx-auto"
           />

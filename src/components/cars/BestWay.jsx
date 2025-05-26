@@ -12,7 +12,7 @@ const BestWay = () => {
       <div className="mt-8 flex justify-center gap-4 flex-col sm:flex-row">
         <div className="text-center  flex-1">
           <img
-            src="/images/choose-car.png"
+            src={`${process.env.PUBLIC_URL}/images/choose-car.png`}
             alt=""
             className="w-36 h-36 mx-auto object-contain"
           />
@@ -28,7 +28,7 @@ const BestWay = () => {
 
         <div className="text-center  flex-1">
           <img
-            src="/images/contact-dealer.png"
+            src={`${process.env.PUBLIC_URL}/images/contact-dealer.png`}
             alt=""
             className="w-36 h-36 mx-auto object-contain"
           />
@@ -45,7 +45,7 @@ const BestWay = () => {
 
         <div className="text-center  flex-1">
           <img
-            src="/images/get-car.png"
+            src={`${process.env.PUBLIC_URL}/images/get-car.png`}
             alt=""
             className="w-36 h-36 mx-auto object-contain"
           />

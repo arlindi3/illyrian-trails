@@ -38,7 +38,7 @@ const HotelDetails = () => {
       <div className="mt-5 flex flex-wrap rounded-xl gap-4 overflow-hidden">
         <div className="group overflow-hidden flex-1 basis-[30rem]">
           <img
-            src="/images/place (31).jpg"
+            src={`${process.env.PUBLIC_URL}/images/place (31).jpg`}
             alt=""
             className="group-hover:scale-125 transition-a "
           />
@@ -46,21 +46,21 @@ const HotelDetails = () => {
         <div className="flex-1 basis-[16rem]">
           <div className="group overflow-hidden h-[150px]">
             <img
-              src="/images/place (32).jpg"
+              src={`${process.env.PUBLIC_URL}/images/place (32).jpg`}
               alt=""
               className="group-hover:scale-125 transition-a"
             />
           </div>
           <div className="mt-3 group overflow-hidden h-[150px]">
             <img
-              src="/images/place (33).jpg"
+              src={`${process.env.PUBLIC_URL}/images/place (33).jpg`}
               alt=""
               className="group-hover:scale-125 transition-a"
             />
           </div>
           <div className="mt-3 group overflow-hidden h-[150px]">
             <img
-              src="/images/place (34).jpg"
+              src={`${process.env.PUBLIC_URL}/images/place (34).jpg`}
               alt=""
               className="group-hover:scale-125 transition-a"
             />
