@@ -10,7 +10,7 @@ const RoomPrice = () => {
         >
           <div className="flex-align-center gap-x-3">
             <img
-              src="/images/place (32).jpg"
+              src={`${process.env.PUBLIC_URL}/images/place (32).jpg`}
               alt=""
               className="w-14 h-14 object-cover rounded-lg"
             />

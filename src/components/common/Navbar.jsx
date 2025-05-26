@@ -57,7 +57,11 @@ const Navbar = () => {
         <div className="gap-1 flex-align-center md:gap-3">
           <Link to="/" className="flex-shrink-0 !opacity-100 hidden md:block">
             <img
-              src={mode === "dark" ? "/logo-dark.png" : "/logo-light.png"}
+              src={
+                mode === "dark"
+                  ? `${process.env.PUBLIC_URL}/logo-dark.png`
+                  : `${process.env.PUBLIC_URL}/logo-light.png`
+              }
               alt="logo"
               className="w-[7rem]"
             />
@@ -66,8 +70,8 @@ const Navbar = () => {
             <img
               src={
                 mode === "dark"
-                  ? "/mobile-logo-dark.png"
-                  : "/mobile-logo-light.png"
+                  ? `${process.env.PUBLIC_URL}/mobile-logo-dark.png`
+                  : `${process.env.PUBLIC_URL}/mobile-logo-light.png`
               }
               alt="logo"
               className="w-8"
@@ -78,7 +82,11 @@ const Navbar = () => {
         <div className="flex-align-center gap-x-3 md:gap-x-1">
           <div className="flex-align-center gap-x-3 sm:cursor-pointer">
             <span className="uppercase">usd</span>
-            <img src="/images/usa.png" alt="" className="w-5 rounded-full" />
+            <img
+              src={`${process.env.PUBLIC_URL}/images/usa.png`}
+              alt=""
+              className="w-5 rounded-full"
+            />
           </div>
           {/*---------------------- Notifications toggle------------------------------------------------ */}
           <div
@@ -119,7 +127,7 @@ const Navbar = () => {
               onClick={() => dispatch(toggleDropdown())}
             ></div>
             <motion.img
-              src="/images/avatar.png"
+              src={`${process.env.PUBLIC_URL}/images/avatar.png`}
               alt=""
               className="w-8 h-8 rounded-full dropdown-btn"
               whileTap={{ scale: 0.5 }}

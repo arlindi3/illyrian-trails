@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route, useLocation } from "react-router-dom";
+
 import BackToTopButton from "./components/common/BackToTopButton";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
 import Navbar from "./components/common/Navbar";
 import NewsLetter from "./components/common/NewsLetter";
+
 import { closeDropdown, closeNotifications } from "./features/uiSlice";
 
 import {
@@ -28,31 +30,37 @@ import {
   Rewards,
   Wallet,
 } from "./pages";
+
 import HotelSearch from "./pages/HotelsSearch";
+
 function App() {
   const [showButton, setShowButton] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
   const dispatch = useDispatch();
-  const route = useLocation();
+  const location = useLocation();
 
-  // Show/Hide scroll to top button
-  window.addEventListener("scroll", () => {
-    window.scrollY > 500 ? setShowButton(true) : setShowButton(false);
-  });
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowButton(window.scrollY > 500);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-  const handleCloseDropdown = (e) => {
+  const handleCloseDropdown = () => {
     dispatch(closeDropdown());
     dispatch(closeNotifications());
   };
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [route]);
+  }, [location]);
 
-  // Loader when page is loading
-  window.addEventListener("load", () => {
-    setShowLoader(false);
-  });
+  useEffect(() => {
+    const handleLoad = () => setShowLoader(false);
+    window.addEventListener("load", handleLoad);
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   return (
     <div>
@@ -87,10 +95,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-        <NewsLetter />
-        <Footer />
       </div>
-
+      <NewsLetter />
+      <Footer />
       <BackToTopButton showButton={showButton} />
     </div>
   );

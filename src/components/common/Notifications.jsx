@@ -20,7 +20,7 @@ const Notifications = () => {
             >
               <div>
                 <img
-                  src="/images/avatar-2.png"
+                  src={`${process.env.PUBLIC_URL}/images/avatar-2.png`}
                   alt=""
                   className="w-10 rounded-full"
                 />

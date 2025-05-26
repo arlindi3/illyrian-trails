@@ -7,7 +7,7 @@ const Reviews = () => {
         <div className="bg-white rounded-lg border p-4 mt-3 dark:bg-card-dark dark:border-dark">
           <div className="flex-align-center gap-x-2">
             <img
-              src="/images/avatar.png"
+              src={`${process.env.PUBLIC_URL}/images/avatar.png`}
               alt=""
               className="w-10 h-10 rounded-full"
             />

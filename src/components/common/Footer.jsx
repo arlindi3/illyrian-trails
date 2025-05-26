@@ -15,7 +15,11 @@ const Footer = () => {
           <div className="flex-1 basis-[10rem]">
             <Link to="/">
               <img
-                src={mode === "dark" ? "/logo-dark.png" : "/logo-light.png"}
+                src={
+                  mode === "dark"
+                    ? `${process.env.PUBLIC_URL}/logo-dark.png`
+                    : `${process.env.PUBLIC_URL}/logo-light.png`
+                }
                 alt="logo"
                 className="w-28"
               />

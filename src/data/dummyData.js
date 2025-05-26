@@ -3,49 +3,49 @@ export const bestPlaces = [
     id: 1,
     name: "Batu, East Java",
     number_of_destinations: 86,
-    image: "/images/place (16).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (16).jpg`,
   },
   {
     id: 2,
     name: "Kuta",
     number_of_destinations: 46,
-    image: "/images/place (2).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (2).jpg`,
   },
   {
     id: 3,
     name: "Surabaya, East Java",
     number_of_destinations: 57,
-    image: "/images/place (3).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (3).jpg`,
   },
   {
     id: 4,
     name: "Meelang, east Java",
     number_of_destinations: 12,
-    image: "/images/place (16).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (16).jpg`,
   },
   {
     id: 5,
     name: "Dieng, Central Java",
     number_of_destinations: 76,
-    image: "/images/place (15).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (15).jpg`,
   },
   {
     id: 6,
     name: "Nusa Dua, Lombok",
     number_of_destinations: 42,
-    image: "/images/place (12).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (12).jpg`,
   },
   {
     id: 7,
     name: "Bandung, West Java",
     number_of_destinations: 41,
-    image: "/images/place (5).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (5).jpg`,
   },
   {
     id: 8,
     name: "Wakatobi, Sumatera",
     number_of_destinations: 28,
-    image: "/images/place (4).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (4).jpg`,
   },
 ];
 
@@ -55,35 +55,35 @@ export const featuredDestinations = [
     name: "Barcelona Tour",
     number_of_activities: 123,
     rating: 4.5,
-    image: "/images/place (16).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (16).jpg`,
   },
   {
     id: 2,
     name: "Australia Tour",
     number_of_activities: 353,
     rating: 4.5,
-    image: "/images/place (15).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (15).jpg`,
   },
   {
     id: 3,
     name: "Japan Tour",
     number_of_activities: 165,
     rating: 4.5,
-    image: "/images/place (14).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (14).jpg`,
   },
   {
     id: 4,
     name: "London Tour",
     number_of_activities: 196,
     rating: 4.5,
-    image: "/images/place (13).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (13).jpg`,
   },
   {
     id: 5,
     name: "Manchester Tour",
     number_of_activities: 234,
     rating: 4.5,
-    image: "/images/place (12).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (12).jpg`,
   },
 ];
 
@@ -93,21 +93,21 @@ export const topTours = [
     name: "Japan",
     location: "Japan",
     number_of_places: 10,
-    image: "/images/place (8).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (8).jpg`,
   },
   {
     id: 2,
     name: "Bali",
     location: "Indonesia",
     number_of_places: 11,
-    image: "/images/place (21).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (21).jpg`,
   },
   {
     id: 3,
     name: "Barcelona",
     location: "Spain",
     number_of_places: 56,
-    image: "/images/place (19).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (19).jpg`,
   },
 ];
 
@@ -121,7 +121,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (16).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (16).jpg`,
   },
   {
     id: 2,
@@ -132,7 +132,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (25).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (25).jpg`,
   },
   {
     id: 3,
@@ -143,7 +143,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (26).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (26).jpg`,
   },
   {
     id: 4,
@@ -154,7 +154,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (27).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (27).jpg`,
   },
   {
     id: 5,
@@ -165,7 +165,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (28).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (28).jpg`,
   },
   {
     id: 6,
@@ -176,7 +176,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (29).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (29).jpg`,
   },
   {
     id: 7,
@@ -187,7 +187,7 @@ export const explore = [
     rating: 4.8,
     number_of_reviews: 147,
     price: "210.00",
-    image: "/images/place (30).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (30).jpg`,
   },
 ];
 
@@ -198,7 +198,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "250.00",
-    image: "/images/place (19).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (19).jpg`,
   },
   {
     id: 2,
@@ -206,7 +206,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "356.34",
-    image: "/images/place (3).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (3).jpg`,
   },
   {
     id: 3,
@@ -214,7 +214,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "236.00",
-    image: "/images/place (7).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (7).jpg`,
   },
   {
     id: 4,
@@ -222,7 +222,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "189.00",
-    image: "/images/place (11).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (11).jpg`,
   },
   {
     id: 5,
@@ -230,7 +230,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "299.99.00",
-    image: "/images/place (15).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (15).jpg`,
   },
   {
     id: 6,
@@ -238,7 +238,7 @@ export const trendingCities = [
     rating: "4.6",
     number_of_reviews: 147,
     price: "340.44",
-    image: "/images/place (13).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (13).jpg`,
   },
 ];
 
@@ -248,28 +248,28 @@ export const travelPassions = [
     name: "Beach Hobby",
     rating: "4.6",
     number_of_reviews: 147,
-    image: "/images/place (22).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (22).jpg`,
   },
   {
     id: 2,
     name: "City Tours",
     rating: "4.6",
     number_of_reviews: 147,
-    image: "/images/place (24).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (24).jpg`,
   },
   {
     id: 3,
     name: "Sports Tours",
     rating: "4.6",
     number_of_reviews: 147,
-    image: "/images/place (6).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (6).jpg`,
   },
   {
     id: 4,
     name: "Hiking Trips",
     rating: "4.6",
     number_of_reviews: 147,
-    image: "/images/place (21).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (21).jpg`,
   },
 ];
 
@@ -306,7 +306,7 @@ export const related = [
     number_of_reviews: 167,
     rating: 4.5,
     price: 247,
-    image: "/images/place (25).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (25).jpg`,
   },
   {
     id: 2,
@@ -314,7 +314,7 @@ export const related = [
     number_of_reviews: 167,
     rating: 4.5,
     price: 247,
-    image: "/images/place (26).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (26).jpg`,
   },
   {
     id: 3,
@@ -322,7 +322,7 @@ export const related = [
     number_of_reviews: 167,
     rating: 4.5,
     price: 247,
-    image: "/images/place (27).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (27).jpg`,
   },
 ];
 
@@ -331,46 +331,46 @@ export const popularDestinations = [
     id: 1,
     name: "Japan",
     car_pickups: 86,
-    image: "/images/place (2).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (2).jpg`,
   },
   {
     id: 2,
     name: "Bali",
     car_pickups: 47,
-    image: "/images/place (9).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (9).jpg`,
   },
   {
     id: 3,
     name: "London",
     car_pickups: 35,
-    image: "/images/place (19).jpg",
+    image: `${process.env.PUBLIC_URL}/images/place (19).jpg`,
   },
 ];
 
 export const brands = [
   {
     id: 1,
-    image: "/images/cars/logo1.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo1.png`,
   },
   {
     id: 2,
-    image: "/images/cars/logo2.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo2.png`,
   },
   {
     id: 3,
-    image: "/images/cars/logo3.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo3.png`,
   },
   {
     id: 4,
-    image: "/images/cars/logo4.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo4.png`,
   },
   {
     id: 5,
-    image: "/images/cars/logo5.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo5.png`,
   },
   {
     id: 6,
-    image: "/images/cars/logo6.png",
+    image: `${process.env.PUBLIC_URL}/images/cars/logo6.png`,
   },
 ];
 
@@ -381,12 +381,12 @@ export const blogPosts = [
     excerpt:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
     date_posted: "Jan 30, 2023",
-    image: "/images/blog/blog1.jpg",
+    image: `${process.env.PUBLIC_URL}/images/blog/blog1.jpg`,
     category: "Flight Booking",
     author: {
       name: "Wabweni Brian",
       role: "Front-end Developer",
-      avatar: "/images/avatar.png",
+      avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
     },
   },
   {
@@ -395,12 +395,12 @@ export const blogPosts = [
     excerpt:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
     date_posted: "Jan 30, 2023",
-    image: "/images/blog/blog2.jpg",
+    image: `${process.env.PUBLIC_URL}/images/blog/blog2.jpg`,
     category: "Flight Booking",
     author: {
       name: "Wabweni Brian",
       role: "Front-end Developer",
-      avatar: "/images/avatar.png",
+      avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
     },
   },
   {
@@ -409,12 +409,12 @@ export const blogPosts = [
     excerpt:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
     date_posted: "Jan 30, 2023",
-    image: "/images/blog/blog3.jpg",
+    image: `${process.env.PUBLIC_URL}/images/blog/blog3.jpg`,
     category: "Flight Booking",
     author: {
       name: "Wabweni Brian",
       role: "Front-end Developer",
-      avatar: "/images/avatar-1.png",
+      avatar: `${process.env.PUBLIC_URL}/images/avatar-1.png`,
     },
   },
   {
@@ -423,12 +423,12 @@ export const blogPosts = [
     excerpt:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
     date_posted: "Jan 30, 2023",
-    image: "/images/blog/blog4.jpg",
+    image: `${process.env.PUBLIC_URL}/images/blog/blog4.jpg`,
     category: "Flight Booking",
     author: {
       name: "Wabweni Brian",
       role: "Front-end Developer",
-      avatar: "/images/avatar-2.png",
+      avatar: `${process.env.PUBLIC_URL}/images/avatar-2.png`,
     },
   },
   {
@@ -437,12 +437,12 @@ export const blogPosts = [
     excerpt:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
     date_posted: "Jan 30, 2023",
-    image: "/images/blog/blog5.jpg",
+    image: `${process.env.PUBLIC_URL}/images/blog/blog5.jpg`,
     category: "Flight Booking",
     author: {
       name: "Wabweni Brian",
       role: "Front-end Developer",
-      avatar: "/images/avatar-3.png",
+      avatar: `${process.env.PUBLIC_URL}/images/avatar-3.png`,
     },
   },
 ];
