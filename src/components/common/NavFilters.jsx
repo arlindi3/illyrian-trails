@@ -1,7 +1,10 @@
 import React from "react";
 import { BiBed, BiCar } from "react-icons/bi";
-import { FaPlaneArrival } from "react-icons/fa";
+import { GiSpeedBoat } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
+import { GiFishing } from "react-icons/gi";
+import { FaMotorcycle } from "react-icons/fa";
+import { FaHorse } from "react-icons/fa";
 
 const NavFilters = ({ url }) => {
   return (
@@ -10,15 +13,27 @@ const NavFilters = ({ url }) => {
         <div className="flex-align-center gap-x-5">
           <NavLink to="/" end className="flex-align-center gap-x-2">
             <BiBed />
-            <p>Hotel</p>
+            <p>Hotels</p>
           </NavLink>
           <NavLink to="/flights" className="flex-align-center gap-x-2">
-            <FaPlaneArrival />
-            <p>Flight</p>
+            <GiSpeedBoat />
+            <p>Speedboat guide</p>
           </NavLink>
           <NavLink to="/cars" className="flex-align-center gap-x-2">
             <BiCar />
             <p>Car Rental</p>
+          </NavLink>
+          <NavLink to="/cars" className="flex-align-center gap-x-2">
+            <FaMotorcycle />
+            <p>Motors Rental</p>
+          </NavLink>
+          <NavLink to="/cars" className="flex-align-center gap-x-2">
+            <GiFishing />
+            <p>Fishing Guide</p>
+          </NavLink>
+          <NavLink to="/cars" className="flex-align-center gap-x-2">
+            <FaHorse />
+            <p>Horse Guide</p>
           </NavLink>
         </div>
         <div className="flex-align-center gap-x-2">
