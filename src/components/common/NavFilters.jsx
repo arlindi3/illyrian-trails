@@ -1,38 +1,45 @@
 import React from "react";
 import { BiBed, BiCar } from "react-icons/bi";
 import { GiSpeedBoat } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GiFishing } from "react-icons/gi";
 import { FaMotorcycle } from "react-icons/fa";
 import { FaHorse } from "react-icons/fa";
+import { useNavigate } from "react-router-dom"; // <-- import useNavigate
 
 const NavFilters = ({ url }) => {
+  const navigate = useNavigate(); // <-- initialize navigate
+
+  const handleSearch = () => {
+    navigate(url); // <-- navigate to the url prop
+  };
   return (
     <div className="w-full p-4 bg-white dark:bg-card-dark dark:shadow-none max-w-[90%] mx-auto rounded-xl -mt-10 card-shadow">
       <div className="flex-col py-3 border-0 gap-y-8 md:gap-y-0 flex-center-center md:flex-center-between md:flex-row md:border-b dark:border-dark ">
-        <div className="flex-align-center gap-x-5">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 sm:gap-4 mb-4">
           <NavLink to="/" end className="flex-align-center gap-x-2">
-            <BiBed />
+            <BiBed size={30} />
             <p>Hotels</p>
           </NavLink>
-          <NavLink to="/flights" className="flex-align-center gap-x-2">
-            <GiSpeedBoat />
-            <p>Speedboat guide</p>
+          <NavLink to="/speedboat" className="flex-align-center gap-x-2">
+            <GiSpeedBoat size={30} />
+            <p>Speedboat</p>
           </NavLink>
           <NavLink to="/cars" className="flex-align-center gap-x-2">
-            <BiCar />
+            <BiCar size={30} />
             <p>Car Rental</p>
           </NavLink>
-          <NavLink to="/cars" className="flex-align-center gap-x-2">
-            <FaMotorcycle />
+          <NavLink to="/motors" className="flex-align-center gap-x-2">
+            <FaMotorcycle size={30} />
+
             <p>Motors Rental</p>
           </NavLink>
-          <NavLink to="/cars" className="flex-align-center gap-x-2">
-            <GiFishing />
+          <NavLink to="/fishing" className="flex-align-center gap-x-2">
+            <GiFishing size={30} />
             <p>Fishing Guide</p>
           </NavLink>
-          <NavLink to="/cars" className="flex-align-center gap-x-2">
-            <FaHorse />
+          <NavLink to="/horse" className="flex-align-center gap-x-2">
+            <FaHorse size={30} />
             <p>Horse Guide</p>
           </NavLink>
         </div>
@@ -90,12 +97,13 @@ const NavFilters = ({ url }) => {
             />
           </div>
         </div>
-        <Link
-          to={url}
+        <button
+          type="button"
           className="w-full text-center !opacity-100 btn btn-primary md:w-fit"
+          onClick={handleSearch}
         >
           search
-        </Link>
+        </button>
       </div>
     </div>
   );

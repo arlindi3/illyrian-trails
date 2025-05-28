@@ -1,17 +1,18 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { motion } from "framer-motion";
-import { BiBell, BiCaretDown } from "react-icons/bi";
+// import { motion } from "framer-motion";
+// import { BiBell, BiCaretDown } from "react-icons/bi";
+import { BiBell } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import {
   closeDropdown,
   closeNotifications,
-  toggleDropdown,
+  // toggleDropdown,
   toggleNotifications,
   turnOnDarkMode,
   turnOnLightMode,
   uiStore,
 } from "../../features/uiSlice";
-import Dropdown from "./DropDown";
+// import Dropdown from "./DropDown";
 import Notifications from "./Notifications";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
@@ -63,15 +64,15 @@ const Navbar = () => {
                   : `${process.env.PUBLIC_URL}/logo-light.png`
               }
               alt="logo"
-              className="w-[7rem]"
+              className="w-[5rem]"
             />
           </Link>
           <Link to="/" className="flex-shrink-0 !opacity-100 md:hidden">
             <img
               src={
                 mode === "dark"
-                  ? `${process.env.PUBLIC_URL}/mobile-logo-dark.png`
-                  : `${process.env.PUBLIC_URL}/mobile-logo-light.png`
+                  ? `${process.env.PUBLIC_URL}/logo-dark.png`
+                  : `${process.env.PUBLIC_URL}/logo-light.png`
               }
               alt="logo"
               className="w-8"
@@ -81,9 +82,9 @@ const Navbar = () => {
 
         <div className="flex-align-center gap-x-3 md:gap-x-1">
           <div className="flex-align-center gap-x-3 sm:cursor-pointer">
-            <span className="uppercase">usd</span>
+            <span className="uppercase">eur</span>
             <img
-              src={`${process.env.PUBLIC_URL}/images/usa.png`}
+              src={`${process.env.PUBLIC_URL}/images/euro.png`}
               alt=""
               className="w-5 rounded-full"
             />
@@ -121,7 +122,7 @@ const Navbar = () => {
             </div>
           </div>
           {/*------------------------------- Profile Dropdown toggle-------------------------------------------- */}
-          <div className="relative flex-shrink-0 space-x-1 flex-align-center md:pl-4">
+          {/* <div className="relative flex-shrink-0 space-x-1 flex-align-center md:pl-4">
             <div
               className="absolute top-0 left-0 w-full h-full dropdown-btn sm:cursor-pointer"
               onClick={() => dispatch(toggleDropdown())}
@@ -135,7 +136,7 @@ const Navbar = () => {
 
             <BiCaretDown className="dropdown-btn" />
             <Dropdown />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

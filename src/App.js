@@ -19,19 +19,23 @@ import {
   CarRental,
   CarsSearch,
   ConfirmBooking,
-  Flights,
+  // Flights,
   FlightsSearch,
   Home,
   HotelDetails,
   Login,
   PageNotFound,
-  Profile,
+  // Profile,
   Register,
   Rewards,
   Wallet,
 } from "./pages";
 
 import HotelSearch from "./pages/HotelsSearch";
+import SpeedBoat from "./pages/SpeedBoat";
+import MotorRental from "./pages/MotorRental";
+import FishingGuide from "./pages/FishingGuide";
+import HorseGuide from "./pages/HorseGuide";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -70,12 +74,15 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hotels" element={<Home />} />
-          <Route path="/flights" element={<Flights />} />
+          <Route path="/speedboat" element={<SpeedBoat />} />
           <Route path="/cars" element={<CarRental />} />
+          <Route path="/motors" element={<MotorRental />} />
+          <Route path="/fishing" element={<FishingGuide />} />
+          <Route path="/horse" element={<HorseGuide />} />
           <Route path="/hotels/search" element={<HotelSearch />} />
           <Route path="/cars/search" element={<CarsSearch />} />
           <Route path="/flights/search" element={<FlightsSearch />} />
-          <Route path="/profile" element={<Profile />} />
+          {/* <Route path="/profile" element={<Profile />} /> */}
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/rewards" element={<Rewards />} />
           <Route path="/blog" element={<Blog />} />

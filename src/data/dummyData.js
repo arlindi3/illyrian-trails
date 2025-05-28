@@ -52,38 +52,38 @@ export const bestPlaces = [
 export const featuredDestinations = [
   {
     id: 1,
-    name: "Barcelona Tour",
+    name: "Syri i Klatër",
     number_of_activities: 123,
     rating: 4.5,
-    image: `${process.env.PUBLIC_URL}/images/place (16).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
   },
   {
     id: 2,
-    name: "Australia Tour",
+    name: "Vlorë",
     number_of_activities: 353,
     rating: 4.5,
-    image: `${process.env.PUBLIC_URL}/images/place (15).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/vlore.jpg`,
   },
   {
     id: 3,
-    name: "Japan Tour",
+    name: "Korçë",
     number_of_activities: 165,
     rating: 4.5,
-    image: `${process.env.PUBLIC_URL}/images/place (14).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/Korce-Voskopoje.jpg`,
   },
   {
     id: 4,
-    name: "London Tour",
+    name: "Apollonia",
     number_of_activities: 196,
     rating: 4.5,
-    image: `${process.env.PUBLIC_URL}/images/place (13).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/apollonia.jpg`,
   },
   {
     id: 5,
-    name: "Manchester Tour",
+    name: "Berat",
     number_of_activities: 234,
     rating: 4.5,
-    image: `${process.env.PUBLIC_URL}/images/place (12).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/berat.jpg`,
   },
 ];
 
@@ -245,34 +245,63 @@ export const trendingCities = [
 export const travelPassions = [
   {
     id: 1,
-    name: "Beach Hobby",
+    name: "Korçë dhe Voskopojë",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/place (22).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/Korce-Voskopoje.jpg`,
   },
   {
     id: 2,
-    name: "City Tours",
+    name: "Udhëtim me Gomone",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/place (24).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/gomone-durres.png`,
   },
   {
     id: 3,
-    name: "Sports Tours",
+    name: "Guidë me Kuaj",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/place (6).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/kuaj-guide.jpg`,
   },
   {
     id: 4,
-    name: "Hiking Trips",
+    name: "Guidë me Motorra 4 Goma",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/place (21).jpg`,
+    image: `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
   },
 ];
-
+// export const travelPassions = [
+//   {
+//     id: 1,
+//     name: "Beach Hobby",
+//     rating: "4.6",
+//     number_of_reviews: 147,
+//     image: `${process.env.PUBLIC_URL}/images/place (22).jpg`,
+//   },
+//   {
+//     id: 2,
+//     name: "City Tours",
+//     rating: "4.6",
+//     number_of_reviews: 147,
+//     image: `${process.env.PUBLIC_URL}/images/place (24).jpg`,
+//   },
+//   {
+//     id: 3,
+//     name: "Sports Tours",
+//     rating: "4.6",
+//     number_of_reviews: 147,
+//     image: `${process.env.PUBLIC_URL}/images/place (6).jpg`,
+//   },
+//   {
+//     id: 4,
+//     name: "Hiking Trips",
+//     rating: "4.6",
+//     number_of_reviews: 147,
+//     image: `${process.env.PUBLIC_URL}/images/place (21).jpg`,
+//   },
+// ];
 export const rooms = [
   {
     id: 1,
