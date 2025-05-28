@@ -34,8 +34,8 @@ const TrendingCities = () => {
                     </p>
                   </div>
                   <h1>
-                    <span className="text-xl font-bold">${price}</span>
-                    <span className="text-sm opacity-80">/night</span>
+                    <span className="text-xl font-bold">€{price}</span>
+                    <span className="text-sm opacity-80">/Day</span>
                   </h1>
                   <Link
                     to="/hotels/1/confirm-booking"

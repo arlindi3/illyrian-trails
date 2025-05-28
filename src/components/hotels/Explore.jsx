@@ -84,7 +84,7 @@ const Explore = () => {
                     <h1 className="font-bold text-xl">{name}</h1>
                   </Link>
                   <span className="bg-primary/20 text-primary px-2">
-                    ${price}
+                    €{price}
                   </span>
                 </div>
                 <p className="text-sm">{distance} to Town Center</p>

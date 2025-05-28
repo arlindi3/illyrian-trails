@@ -16,7 +16,7 @@ import {
   Trending,
 } from "../components/hotel-details";
 
-const HotelDetails = () => {
+const PacketDetails = () => {
   return (
     <div className="pt-16 px-[3%] md:px-[6%]">
       <h1 className="text-3xl md:text-4xl font-bold capitalize">
@@ -75,12 +75,12 @@ const HotelDetails = () => {
           <span className="text-sm text-secondaryYellow bg-secondaryYellow/20 px-2 rounded">
             Perfect
           </span>
-          <span className="text-sm text-primary bg-primary/20 px-2 rounded">
+          {/* <span className="text-sm text-primary bg-primary/20 px-2 rounded">
             Hotels
           </span>
           <span className="text-sm text-secondaryRed bg-secondaryRed/20 px-2 rounded">
             Building
-          </span>
+          </span> */}
           <span className="text-sm text-orange-500 bg-orange-500/20 px-2 rounded">
             Top value
           </span>
@@ -142,4 +142,4 @@ const HotelDetails = () => {
   );
 };
 
-export default HotelDetails;
+export default PacketDetails;

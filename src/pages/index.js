@@ -11,7 +11,7 @@ export { default as BookingSuccess } from "./BookingSuccess";
 export { default as Wallet } from "./Wallet";
 export { default as Rewards } from "./Rewards";
 export { default as Blog } from "./Blog";
-export { default as HotelDetails } from "./HotelDetails";
+export { default as PacketDetails } from "./PacketDetails";
 export { default as CarDetails } from "./CarDetails";
 export { default as BlogPost } from "./BlogPost";
 export { default as Login } from "./Login";

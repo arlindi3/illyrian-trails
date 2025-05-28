@@ -22,7 +22,7 @@ import {
   // Flights,
   FlightsSearch,
   Home,
-  HotelDetails,
+  // PacketDetails,
   Login,
   PageNotFound,
   // Profile,
@@ -36,6 +36,7 @@ import SpeedBoat from "./pages/SpeedBoat";
 import MotorRental from "./pages/MotorRental";
 import FishingGuide from "./pages/FishingGuide";
 import HorseGuide from "./pages/HorseGuide";
+import PacketDetails from "./pages/PacketDetails";
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -95,7 +96,7 @@ function App() {
             path="/hotel/:id/booking-sucess"
             element={<BookingSuccess />}
           />
-          <Route path="/hotels/:id" element={<HotelDetails />} />
+          <Route path="/hotels/:id" element={<PacketDetails />} />
           <Route path="/cars/:id" element={<CarDetails />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/login" element={<Login />} />
