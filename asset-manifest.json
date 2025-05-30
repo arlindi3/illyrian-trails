@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/ilyrian-trails/static/css/main.44cc05a9.css",
-    "main.js": "/ilyrian-trails/static/js/main.1a10c231.js",
+    "main.css": "/ilyrian-trails/static/css/main.2eeba58d.css",
+    "main.js": "/ilyrian-trails/static/js/main.3c3239a5.js",
     "static/media/banner.jpg": "/ilyrian-trails/static/media/banner.4afc4bf701fe215908fc.jpg",
     "static/media/home-banner.png": "/ilyrian-trails/static/media/home-banner.0af3cd55d123f93d56b7.png",
     "static/media/car.jpg": "/ilyrian-trails/static/media/car.55aedc4773038ab5145f.jpg",
     "static/media/Questrial-Regular.ttf": "/ilyrian-trails/static/media/Questrial-Regular.8268e81790f4302669b7.ttf",
+    "static/media/city-guide.jpg": "/ilyrian-trails/static/media/city-guide.f56c53870e579123dc7d.jpg",
     "static/media/404.png": "/ilyrian-trails/static/media/404.27df96fefd06d8c3b5b0.png",
     "static/media/fishing boat.jpg": "/ilyrian-trails/static/media/fishing boat.c9002a0e0b6f08b856ff.jpg",
     "static/media/EAHORA M1P PLUS― the most popular electric….jpg": "/ilyrian-trails/static/media/EAHORA M1P PLUS― the most popular electric….fe9dcf59d1f2b4dba0a8.jpg",
     "static/media/bootlove • Instagram.jpg": "/ilyrian-trails/static/media/bootlove • Instagram.3873b0c36b3a684f8cb5.jpg",
     "static/media/flights.jpg": "/ilyrian-trails/static/media/flights.d7cdda286e36077667a4.jpg",
+    "static/media/house.jpg": "/ilyrian-trails/static/media/house.79e07b463d073e917987.jpg",
     "index.html": "/ilyrian-trails/index.html",
-    "main.44cc05a9.css.map": "/ilyrian-trails/static/css/main.44cc05a9.css.map",
-    "main.1a10c231.js.map": "/ilyrian-trails/static/js/main.1a10c231.js.map"
+    "main.2eeba58d.css.map": "/ilyrian-trails/static/css/main.2eeba58d.css.map",
+    "main.3c3239a5.js.map": "/ilyrian-trails/static/js/main.3c3239a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.44cc05a9.css",
-    "static/js/main.1a10c231.js"
+    "static/css/main.2eeba58d.css",
+    "static/js/main.3c3239a5.js"
   ]
 }
