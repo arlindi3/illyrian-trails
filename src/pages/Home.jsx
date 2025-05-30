@@ -23,10 +23,9 @@ const Home = () => {
       <NavFilters url="/hotels/search" />
       <div className="mt-5 px-[3%] md:px-[6%]">
         {/* <BestPlaces /> */}
-        <FeaturedDestinations />
         <Explore />
+        <FeaturedDestinations />
         <TopTours />
-
         <TrendingCities />
         <TravelPassion />
       </div>

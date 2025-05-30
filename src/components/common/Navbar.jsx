@@ -1,22 +1,23 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // import { motion } from "framer-motion";
 // import { BiBell, BiCaretDown } from "react-icons/bi";
-import { BiBell } from "react-icons/bi";
+// import { BiBell } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import {
   closeDropdown,
   closeNotifications,
   // toggleDropdown,
-  toggleNotifications,
+  // toggleNotifications,
   turnOnDarkMode,
   turnOnLightMode,
   uiStore,
 } from "../../features/uiSlice";
 // import Dropdown from "./DropDown";
-import Notifications from "./Notifications";
+// import Notifications from "./Notifications";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { FiMoon, FiSun } from "react-icons/fi";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const rootDoc = document.querySelector(":root");
@@ -56,6 +57,9 @@ const Navbar = () => {
     >
       <div className="flex-center-between">
         <div className="gap-1 flex-align-center md:gap-3">
+          <div className="block md:hidden">
+            <MobileMenu />
+          </div>
           <Link to="/" className="flex-shrink-0 !opacity-100 hidden md:block">
             <img
               src={
@@ -67,6 +71,7 @@ const Navbar = () => {
               className="w-[5rem]"
             />
           </Link>
+
           <Link to="/" className="flex-shrink-0 !opacity-100 md:hidden">
             <img
               src={
@@ -78,9 +83,15 @@ const Navbar = () => {
               className="w-8"
             />
           </Link>
+          <Link
+            to="/"
+            className="text-xl font-semibold text-gray-800 dark:text-white "
+          >
+            Ilyrian Trails
+          </Link>
         </div>
 
-        <div className="flex-align-center gap-x-3 md:gap-x-1">
+        {/* <div className="flex-align-center gap-x-3 md:gap-x-1">
           <div className="flex-align-center gap-x-3 sm:cursor-pointer">
             <span className="uppercase">eur</span>
             <img
@@ -88,9 +99,10 @@ const Navbar = () => {
               alt=""
               className="w-5 rounded-full"
             />
-          </div>
-          {/*---------------------- Notifications toggle------------------------------------------------ */}
-          <div
+          </div> */}
+        {/*---------------------- Notifications toggle------------------------------------------------ */}
+        {
+          /* <div
             className="icon-box !opacity-100 relative notification-btn"
             onClick={() => dispatch(toggleNotifications())}
           >
@@ -99,9 +111,9 @@ const Navbar = () => {
               <div className="absolute top-0 right-0 w-2 h-2 bg-red-400 rounded-full notification-btn"></div>
             </div>
             <Notifications />
-          </div>
-          {/* ---------------------------------Theme toggle------------------------------ */}
-          <div className="gap-3 px-2 py-1 rounded-lg select-none flex-align-center bg-slate-100 dark:bg-main-dark w-fit">
+          </div> */
+          /* ---------------------------------Theme toggle------------------------------ */
+          <div className="gap-3 px-2 py-1 rounded-lg select-none flex-align-center bg-slate-100 dark:bg-main-dark w-fit ml-auto md:mr-18">
             <div
               className={`sm:cursor-pointer ${
                 mode === "light" &&
@@ -121,8 +133,9 @@ const Navbar = () => {
               <FiMoon />
             </div>
           </div>
-          {/*------------------------------- Profile Dropdown toggle-------------------------------------------- */}
-          {/* <div className="relative flex-shrink-0 space-x-1 flex-align-center md:pl-4">
+          /*------------------------------- Profile Dropdown toggle-------------------------------------------- */
+        }
+        {/* <div className="relative flex-shrink-0 space-x-1 flex-align-center md:pl-4">
             <div
               className="absolute top-0 left-0 w-full h-full dropdown-btn sm:cursor-pointer"
               onClick={() => dispatch(toggleDropdown())}
@@ -137,9 +150,9 @@ const Navbar = () => {
             <BiCaretDown className="dropdown-btn" />
             <Dropdown />
           </div> */}
-        </div>
       </div>
     </div>
+    // </div>
   );
 };
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route, useLocation } from "react-router-dom";
 
-import BackToTopButton from "./components/common/BackToTopButton";
+// import BackToTopButton from "./components/common/BackToTopButton";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
 import Navbar from "./components/common/Navbar";
@@ -37,20 +37,23 @@ import MotorRental from "./pages/MotorRental";
 import FishingGuide from "./pages/FishingGuide";
 import HorseGuide from "./pages/HorseGuide";
 import PacketDetails from "./pages/PacketDetails";
+import WhatsAppButton from "./components/common/WhatsAppButton";
+import Houses from "./pages/Houses";
+import CityGuide from "./pages/CityGuide";
 
 function App() {
-  const [showButton, setShowButton] = useState(false);
+  // const [showButton, setShowButton] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
   const dispatch = useDispatch();
   const location = useLocation();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowButton(window.scrollY > 500);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setShowButton(window.scrollY > 500);
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const handleCloseDropdown = () => {
     dispatch(closeDropdown());
@@ -74,12 +77,13 @@ function App() {
       <div className="min-h-screen" onClick={handleCloseDropdown}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/hotels" element={<Home />} />
+          <Route path="/houses" element={<Houses />} />
+          <Route path="/city-guide" element={<CityGuide />} />
           <Route path="/speedboat" element={<SpeedBoat />} />
           <Route path="/cars" element={<CarRental />} />
           <Route path="/motors" element={<MotorRental />} />
-          <Route path="/fishing" element={<FishingGuide />} />
-          <Route path="/horse" element={<HorseGuide />} />
+          <Route path="/fishing-guide" element={<FishingGuide />} />
+          <Route path="/horseback-riding" element={<HorseGuide />} />
           <Route path="/hotels/search" element={<HotelSearch />} />
           <Route path="/cars/search" element={<CarsSearch />} />
           <Route path="/flights/search" element={<FlightsSearch />} />
@@ -106,7 +110,8 @@ function App() {
       </div>
       <NewsLetter />
       <Footer />
-      <BackToTopButton showButton={showButton} />
+      {/* <BackToTopButton showButton={showButton} /> */}
+      <WhatsAppButton />
     </div>
   );
 }
