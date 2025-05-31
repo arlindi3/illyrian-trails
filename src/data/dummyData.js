@@ -116,7 +116,7 @@ export const explore = [
     id: 1,
     name: "Home in Vloga Durrës",
     distance: "1.2km",
-    address: "Vloga Durrës",
+    address: "Volga Durrës",
     rooms_available: 12,
     rating: 4.8,
     number_of_reviews: 147,
@@ -190,7 +190,105 @@ export const explore = [
     image: `${process.env.PUBLIC_URL}/images/apollonia.jpg`,
   },
 ];
+export const packagesData = [
+  {
+    id: "1",
+    title: "Home in Vloga Durrës",
+    location: "Volga Durrës",
+    images: [
+      `${process.env.PUBLIC_URL}/images/place (16).jpg`,
+      "/images/hotel (2).jpg",
+      "/images/hotel (3).jpg",
+      "/images/hotel (4).jpg",
+    ],
+    rating: 4.5,
+    tags: ["Good", "Popular"],
+    type: "house",
+    description: "A cozy beach house in Dhermi with 2 bedrooms...",
+    price: "33",
+  },
+  {
+    id: "2",
+    title: "Guide to the Blue Eye",
+    location: "Sarandë, Albania",
+    images: [
+      `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
+      "/images/syri2.jpg",
+      "/images/syri3.jpg",
+      "/images/syri4.jpg",
+    ],
+    rating: 4.7,
+    tags: ["Nature", "Top Rated"],
+    type: "tour",
+    description: "Explore the magical Blue Eye with a local guide...",
+    price: "33",
+  },
+  {
+    id: "3",
+    title: "Skaf në Ksamil",
+    location: "Ksamil, Albania",
+    images: [
+      `${process.env.PUBLIC_URL}/images/speedboat1.jpg`,
+      "/images/ksamil2.jpg",
+      "/images/ksamil3.jpg",
+      "/images/ksamil4.jpg",
+    ],
+    rating: 4.8,
+    tags: ["Boat", "Adventurous"],
+    type: "boat",
+    description: "A thrilling speedboat tour through Ksamil Islands...",
+    price: "33",
+  },
 
+  {
+    id: "4",
+    title: "Guide ne Apolloni",
+    location: "Fier City",
+    images: [
+      `${process.env.PUBLIC_URL}/images/apollonia.jpg`,
+      "/images/ksamil2.jpg",
+      "/images/ksamil3.jpg",
+      "/images/ksamil4.jpg",
+    ],
+    rating: 4.8,
+    tags: ["Boat", "Adventurous"],
+    type: "boat",
+    description: "A thrilling speedboat tour through Ksamil Islands...",
+    price: "33",
+  },
+  {
+    id: "5",
+    title: "Horse Riding Guide",
+    location: "Sektor Rinia",
+    images: [
+      `${process.env.PUBLIC_URL}/images/horse-ride.jpg`,
+      "/images/ksamil2.jpg",
+      "/images/ksamil3.jpg",
+      "/images/ksamil4.jpg",
+    ],
+    rating: 4.8,
+    tags: ["Boat", "Adventurous"],
+    type: "boat",
+    description: "A thrilling speedboat tour through Ksamil Islands...",
+    price: "33",
+  },
+  {
+    id: "6",
+    title: "4 Wheeler Motorcycle Guide",
+    location: "Durrës",
+    images: [
+      `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
+      "/images/ksamil2.jpg",
+      "/images/ksamil3.jpg",
+      "/images/ksamil4.jpg",
+    ],
+    rating: 4.8,
+    tags: ["Boat", "Adventurous"],
+    type: "boat",
+    description: "A thrilling speedboat tour through Ksamil Islands...",
+    price: "33",
+  },
+];
 export const trendingCities = [
   {
     id: 1,
@@ -199,6 +297,13 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "55",
     image: `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
+    gallery: [
+      `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
+      `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
+      `${process.env.PUBLIC_URL}/images/syri-i-kalter.jpg`,
+    ],
+    video: "https://www.youtube.com/embed/IRi_nMZAlJg",
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
   {
     id: 2,
@@ -207,6 +312,7 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "40",
     image: `${process.env.PUBLIC_URL}/images/vlore.jpg`,
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
   {
     id: 3,
@@ -215,6 +321,7 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "40",
     image: `${process.env.PUBLIC_URL}/images/berat.jpg`,
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
   {
     id: 4,
@@ -223,6 +330,7 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "35",
     image: `${process.env.PUBLIC_URL}/images/apollonia.jpg`,
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
   {
     id: 5,
@@ -231,6 +339,7 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "45",
     image: `${process.env.PUBLIC_URL}/images/Korce-Voskopoje.jpg`,
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
   {
     id: 6,
@@ -239,6 +348,7 @@ export const trendingCities = [
     number_of_reviews: 147,
     price: "35",
     image: `${process.env.PUBLIC_URL}/images/lumi-i-shales.jpg`,
+    description: "Syri i Kaltër is a famous natural spring in Albania...",
   },
 ];
 

@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "../components/common/Banner";
 import NavFilters from "../components/common/NavFilters";
 import HomeBanner from "../banners/banner.jpg";
-import { HotelsList } from "../components/hotels";
+import { HotelsList } from "../components/home";
 import { useDispatch, useSelector } from "react-redux";
 import { closeFilterMenu, openFilterMenu, uiStore } from "../features/uiSlice";
 import { FiChevronDown, FiDelete } from "react-icons/fi";

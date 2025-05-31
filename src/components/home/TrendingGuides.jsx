@@ -1,20 +1,23 @@
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 import { trendingCities } from "../../data/dummyData";
 
-const TrendingCities = () => {
+const TrendingGuides = () => {
+  const handleGuideClick = (city) => {
+    // Optional: add logic here if needed
+    console.log("Guide clicked:", city);
+  };
+
   return (
     <div className="pt-10 pb-16">
       <div className="text-center">
-        <h1 className="heading">trending cities</h1>
+        <h1 className="heading">trending guides</h1>
         <p className="mt-2">The most searched for cities on TipGuide</p>
       </div>
       <div className="mt-4 flex flex-wrap gap-4">
         {trendingCities.map(
           ({ id, name, rating, image, number_of_reviews, price }) => (
-            <Link
-              to="hotels/1"
+            <div
               key={id}
               className="p-3 bg-white !opacity-100 rounded-lg dark:bg-card-dark flex-1 basis-[20rem]"
             >
@@ -38,14 +41,24 @@ const TrendingCities = () => {
                     <span className="text-sm opacity-80">/Day</span>
                   </h1>
                   <Link
-                    to="/hotels/1/confirm-booking"
-                    className="btn btn-secondary block text-center  mt-3"
+                    to={`/packet/${id}/confirm-booking`}
+                    className="btn btn-secondary block text-center mt-3"
+                    onClick={() =>
+                      handleGuideClick({
+                        id,
+                        name,
+                        rating,
+                        image,
+                        number_of_reviews,
+                        price,
+                      })
+                    }
                   >
                     book now
                   </Link>
                 </div>
               </div>
-            </Link>
+            </div>
           )
         )}
       </div>
@@ -53,4 +66,4 @@ const TrendingCities = () => {
   );
 };
 
-export default TrendingCities;
+export default TrendingGuides;

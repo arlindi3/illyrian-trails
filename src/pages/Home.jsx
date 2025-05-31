@@ -9,8 +9,8 @@ import {
   FeaturedDestinations,
   TopTours,
   TravelPassion,
-  TrendingCities,
-} from "../components/hotels";
+  TrendingGuides,
+} from "../components/home";
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
         <Explore />
         <FeaturedDestinations />
         <TopTours />
-        <TrendingCities />
+        <TrendingGuides />
         <TravelPassion />
       </div>
     </div>

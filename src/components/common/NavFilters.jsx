@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const navItems = [
   { to: "/", label: "Home", icon: <MdExplore size={24} /> },
-  { to: "/house", label: "Houses", icon: <BiBed size={24} /> },
+  { to: "/houses", label: "Houses", icon: <BiBed size={24} /> },
   { to: "/city-guide", label: "City Guide", icon: <MdMap size={24} /> },
   { to: "/speedboat", label: "Speedboat", icon: <GiSpeedBoat size={24} /> },
   { to: "/cars", label: "Car Rental", icon: <BiCar size={24} /> },

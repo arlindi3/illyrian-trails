@@ -40,6 +40,8 @@ import PacketDetails from "./pages/PacketDetails";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Houses from "./pages/Houses";
 import CityGuide from "./pages/CityGuide";
+import HouseDetails from "./components/houses/HouseDetails";
+import Layout from "./components/common/Layout";
 
 function App() {
   // const [showButton, setShowButton] = useState(false);
@@ -77,31 +79,138 @@ function App() {
       <div className="min-h-screen" onClick={handleCloseDropdown}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/houses" element={<Houses />} />
-          <Route path="/city-guide" element={<CityGuide />} />
-          <Route path="/speedboat" element={<SpeedBoat />} />
-          <Route path="/cars" element={<CarRental />} />
-          <Route path="/motors" element={<MotorRental />} />
-          <Route path="/fishing-guide" element={<FishingGuide />} />
-          <Route path="/horseback-riding" element={<HorseGuide />} />
-          <Route path="/hotels/search" element={<HotelSearch />} />
-          <Route path="/cars/search" element={<CarsSearch />} />
-          <Route path="/flights/search" element={<FlightsSearch />} />
+          <Route
+            path="/houses"
+            element={
+              <Layout>
+                <Houses />
+              </Layout>
+            }
+          />
+          <Route
+            path="/houses/:id"
+            element={
+              <Layout>
+                <HouseDetails />
+              </Layout>
+            }
+          />
+          <Route
+            path="/city-guide"
+            element={
+              <Layout>
+                <CityGuide />
+              </Layout>
+            }
+          />
+          <Route
+            path="/speedboat"
+            element={
+              <Layout>
+                <SpeedBoat />
+              </Layout>
+            }
+          />
+          <Route
+            path="/cars"
+            element={
+              <Layout>
+                <CarRental />
+              </Layout>
+            }
+          />
+          <Route
+            path="/motors"
+            element={
+              <Layout>
+                <MotorRental />
+              </Layout>
+            }
+          />
+          <Route
+            path="/fishing-guide"
+            element={
+              <Layout>
+                <FishingGuide />
+              </Layout>
+            }
+          />
+          <Route
+            path="/horseback-riding"
+            element={
+              <Layout>
+                <HorseGuide />
+              </Layout>
+            }
+          />
+          <Route
+            path="/hotels/search"
+            element={
+              <Layout>
+                <HotelSearch />
+              </Layout>
+            }
+          />
+          <Route
+            path="/cars/search"
+            element={
+              <Layout>
+                <CarsSearch />
+              </Layout>
+            }
+          />
+          <Route
+            path="/flights/search"
+            element={
+              <Layout>
+                <FlightsSearch />
+              </Layout>
+            }
+          />
           {/* <Route path="/profile" element={<Profile />} /> */}
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/rewards" element={<Rewards />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/bookings" element={<Bookings />} />
           <Route
-            path="/hotels/:id/confirm-booking"
-            element={<ConfirmBooking />}
+            path="/bookings"
+            element={
+              <Layout>
+                <Bookings />
+              </Layout>
+            }
           />
           <Route
-            path="/hotel/:id/booking-sucess"
-            element={<BookingSuccess />}
+            path="/packet/:id/confirm-booking"
+            element={
+              <Layout>
+                <ConfirmBooking />
+              </Layout>
+            }
           />
-          <Route path="/hotels/:id" element={<PacketDetails />} />
-          <Route path="/cars/:id" element={<CarDetails />} />
+          <Route
+            path="/packet/:id/booking-sucess"
+            element={
+              <Layout>
+                <BookingSuccess />
+              </Layout>
+            }
+          />
+          <Route
+            path="/packets/:id"
+            element={
+              <Layout>
+                <PacketDetails />
+              </Layout>
+            }
+          />
+          <Route
+            path="/cars/:id"
+            element={
+              <Layout>
+                <CarDetails />
+              </Layout>
+            }
+          />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

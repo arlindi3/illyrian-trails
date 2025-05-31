@@ -130,7 +130,7 @@ const Footer = () => {
       </footer>
       <div className="text-center  text-muted mt-3 py-2 border-t dark:border-dark">
         <p>
-          Created By <span className="text-primary">Wabweni Brian</span> | All
+          Created By <span className="text-primary">Arlind Drabo</span> | All
           Rights Reserved. &copy;{new Date().getFullYear()}
         </p>
       </div>
