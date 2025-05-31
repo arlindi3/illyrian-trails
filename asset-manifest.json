@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ilyrian-trails/static/css/main.2eeba58d.css",
-    "main.js": "/ilyrian-trails/static/js/main.3c3239a5.js",
+    "main.css": "/ilyrian-trails/static/css/main.ab183e84.css",
+    "main.js": "/ilyrian-trails/static/js/main.75397c9f.js",
     "static/media/banner.jpg": "/ilyrian-trails/static/media/banner.4afc4bf701fe215908fc.jpg",
     "static/media/home-banner.png": "/ilyrian-trails/static/media/home-banner.0af3cd55d123f93d56b7.png",
     "static/media/car.jpg": "/ilyrian-trails/static/media/car.55aedc4773038ab5145f.jpg",
@@ -14,11 +14,11 @@
     "static/media/flights.jpg": "/ilyrian-trails/static/media/flights.d7cdda286e36077667a4.jpg",
     "static/media/house.jpg": "/ilyrian-trails/static/media/house.79e07b463d073e917987.jpg",
     "index.html": "/ilyrian-trails/index.html",
-    "main.2eeba58d.css.map": "/ilyrian-trails/static/css/main.2eeba58d.css.map",
-    "main.3c3239a5.js.map": "/ilyrian-trails/static/js/main.3c3239a5.js.map"
+    "main.ab183e84.css.map": "/ilyrian-trails/static/css/main.ab183e84.css.map",
+    "main.75397c9f.js.map": "/ilyrian-trails/static/js/main.75397c9f.js.map"
   },
   "entrypoints": [
-    "static/css/main.2eeba58d.css",
-    "static/js/main.3c3239a5.js"
+    "static/css/main.ab183e84.css",
+    "static/js/main.75397c9f.js"
   ]
 }
