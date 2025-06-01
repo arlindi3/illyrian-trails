@@ -111,6 +111,41 @@ export const topTours = [
   },
 ];
 
+export const speedBoatTours = [
+  {
+    id: 1,
+    name: "Tour in the Bay of Saranda",
+    price: "45",
+    duration: "1 hour",
+    rating: "4.7",
+    number_of_reviews: 92,
+    image: `${process.env.PUBLIC_URL}/images/boat1.jpg`,
+    description:
+      "Explore the beauties of Saranda on an unforgettable boat trip.",
+  },
+  {
+    id: 2,
+    name: "Ksamil Guide - Blue Eye",
+    price: "70",
+    duration: "2 hours",
+    rating: "4.9",
+    number_of_reviews: 124,
+    image: `${process.env.PUBLIC_URL}/images/boat2.jpg`,
+    description:
+      "Boat tour from Ksamil to the Blue Eye with stops for photos and swimming.",
+  },
+  {
+    id: 3,
+    name: "Exploring Kakomae Bay",
+    price: "65",
+    duration: "1.5 hours",
+    rating: "4.8",
+    number_of_reviews: 88,
+    image: `${process.env.PUBLIC_URL}/images/boat3.jpg`,
+    description:
+      "A fast and exciting journey to one of the most beautiful bays.",
+  },
+];
 export const explore = [
   {
     id: 1,
@@ -382,36 +417,7 @@ export const travelPassions = [
     image: `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
   },
 ];
-// export const travelPassions = [
-//   {
-//     id: 1,
-//     name: "Beach Hobby",
-//     rating: "4.6",
-//     number_of_reviews: 147,
-//     image: `${process.env.PUBLIC_URL}/images/place (22).jpg`,
-//   },
-//   {
-//     id: 2,
-//     name: "City Tours",
-//     rating: "4.6",
-//     number_of_reviews: 147,
-//     image: `${process.env.PUBLIC_URL}/images/place (24).jpg`,
-//   },
-//   {
-//     id: 3,
-//     name: "Sports Tours",
-//     rating: "4.6",
-//     number_of_reviews: 147,
-//     image: `${process.env.PUBLIC_URL}/images/place (6).jpg`,
-//   },
-//   {
-//     id: 4,
-//     name: "Hiking Trips",
-//     rating: "4.6",
-//     number_of_reviews: 147,
-//     image: `${process.env.PUBLIC_URL}/images/place (21).jpg`,
-//   },
-// ];
+
 export const rooms = [
   {
     id: 1,

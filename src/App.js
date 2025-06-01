@@ -6,7 +6,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
 import Navbar from "./components/common/Navbar";
-import NewsLetter from "./components/common/NewsLetter";
+// import NewsLetter from "./components/common/NewsLetter";
 
 import { closeDropdown, closeNotifications } from "./features/uiSlice";
 
@@ -217,7 +217,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <Footer />
       {/* <BackToTopButton showButton={showButton} /> */}
       <WhatsAppButton />

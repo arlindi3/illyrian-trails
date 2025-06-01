@@ -17,19 +17,19 @@ const Explore = () => {
       : setIsscroll(false);
   };
   return (
-    <div className="pt-10 pb-16 bg-gradient-to-b from-blue-50 to-white">
+    <div className="pt-10 pb-16 bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800">
       <div className="flex-center-between mb-8 px-4">
         <div>
           <h1 className="heading text-3xl font-bold mb-1">
             The Best Packages in Albania
           </h1>
-          <p className="mt-2 text-gray-500 text-lg">
+          <p className="mt-2 text-gray-500 text-lg dark:text-gray-300">
             Exquisite and stunning places to spend your holidays
           </p>
         </div>
         <div className="flex-align-center gap-x-3">
           <button
-            className={`w-10 h-10 rounded-full grid place-items-center bg-white shadow-md border transition hover:bg-primary hover:text-white sm:cursor-pointer ${
+            className={`w-10 h-10 rounded-full grid place-items-center bg-white dark:bg-gray-800 shadow-md border transition hover:bg-primary hover:text-white sm:cursor-pointer ${
               !isScroll && "opacity-50 cursor-not-allowed"
             }`}
             onClick={() => scrollContainer("left")}
@@ -39,7 +39,7 @@ const Explore = () => {
             <FiChevronLeft size={22} />
           </button>
           <button
-            className="w-10 h-10 rounded-full grid place-items-center bg-white shadow-md border transition hover:bg-primary hover:text-white sm:cursor-pointer"
+            className="w-10 h-10 rounded-full grid place-items-center bg-white dark:bg-gray-800 shadow-md border transition hover:bg-primary hover:text-white sm:cursor-pointer"
             onClick={() => scrollContainer("right")}
             aria-label="Scroll right"
           >
@@ -57,25 +57,27 @@ const Explore = () => {
             key={packet.id}
             className="min-w-[270px] max-w-xs"
           >
-            <div className="bg-white rounded-2xl shadow-xl p-4 hover:shadow-2xl transition-all duration-200 border border-gray-100 hover:border-primary group">
+            <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-4 hover:shadow-2xl transition-all duration-200 border border-gray-100 dark:border-gray-700 hover:border-primary group">
               <div className="relative">
                 <img
                   src={packet.images[0]}
                   alt={packet.title}
                   className="w-full h-44 object-cover rounded-xl group-hover:scale-105 transition-transform duration-200"
                 />
-                <span className="absolute top-2 right-2 bg-white/80 rounded-full px-3 py-1 text-sm font-semibold text-primary shadow">
+                <span className="absolute top-2 right-2 bg-white/80 dark:bg-gray-800/80 rounded-full px-3 py-1 text-sm font-semibold text-primary shadow">
                   €{packet.price}
                 </span>
               </div>
               <div className="flex items-center gap-x-2 mt-3">
                 <FaStar className="text-secondaryYellow" />
-                <p className="font-medium text-gray-700">{packet.rating}</p>
-                <span className="ml-auto text-xs text-gray-400">
+                <p className="font-medium text-gray-700 dark:text-gray-200">
+                  {packet.rating}
+                </p>
+                <span className="ml-auto text-xs text-gray-400 dark:text-gray-400">
                   {packet.location}
                 </span>
               </div>
-              <h2 className="text-lg font-semibold mt-2 text-primary group-hover:text-secondary transition">
+              <h2 className="text-lg font-semibold mt-2 text-primary group-hover:text-secondary transition dark:text-secondary">
                 {packet.title}
               </h2>
             </div>

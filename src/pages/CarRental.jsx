@@ -1,23 +1,85 @@
 import React from "react";
+import { cars } from "../components/cars/carData";
+import {
+  FaGasPump,
+  FaCogs,
+  FaCalendarAlt,
+  FaUserFriends,
+} from "react-icons/fa";
 import Banner from "../components/common/Banner";
-import NavFilters from "../components/common/NavFilters";
 import CarBanner from "../banners/car.jpg";
-import BestWay from "../components/cars/BestWay";
-import { Brands, Deals, FAQs, PopularDestinations } from "../components/cars";
+import { Explore } from "../components/home";
 
 const CarRental = () => {
   return (
-    <div>
-      <Banner banner={CarBanner} title="Find your best rental car" />
-      <NavFilters url="/cars/search" />
-      <div className="mt-5 px-[3%] md:px-[6%]">
-        <BestWay />
-        <PopularDestinations />
-        <Brands />
-        <Deals />
-        <FAQs />
+    <>
+      <Banner banner={CarBanner} title="Find your best Car to Rent" />
+
+      <div className="min-h-screen pt-24 px-6 md:px-12 pb-16 bg-gray-50 dark:bg-card-dark">
+        <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white mb-10">
+          Car Rental
+        </h1>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {cars.map((car) => (
+            <div
+              key={car.id}
+              className="bg-white dark:bg-dark-light rounded-xl shadow-lg border hover:shadow-xl transition duration-300 overflow-hidden"
+            >
+              <img
+                src={car.image}
+                alt={car.name}
+                className="h-56 w-full object-cover"
+              />
+              <div className="p-5 space-y-3">
+                <h2 className="text-2xl font-bold text-gray-700 dark:text-white">
+                  {car.name}
+                </h2>
+                <p className="text-primary dark:text-secondary text-xl font-semibold">
+                  €{car.pricePerDay} <span className="text-sm">/day</span>
+                </p>
+
+                <div className="grid grid-cols-2 gap-2 text-sm text-gray-600 dark:text-gray-300">
+                  <p className="flex items-center gap-2">
+                    <FaUserFriends className="text-primary dark:text-secondary" />
+                    {car.seats} Seats
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaCogs className="text-primary dark:text-secondary" />
+                    {car.gear}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaGasPump className="text-primary dark:text-secondary" />
+                    {car.fuel}
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <FaCalendarAlt className="text-primary dark:text-secondary" />
+                    {car.year}
+                  </p>
+                </div>
+
+                <button className="mt-4 w-full bg-primary text-white py-2 rounded-full hover:bg-primary/90 transition">
+                  Rent Now
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-16 bg-white/80 dark:bg-card-dark/80 rounded-2xl shadow-xl p-8 flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-3 text-blue-800 dark:text-blue-200">
+            Recommended Packages
+          </h2>
+          <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
+            Explore our exclusive packages for a complete and comfortable stay.
+            Choose from curated deals that include amenities, local experiences,
+            and more to make your trip memorable.
+          </p>
+          <div className="w-full">
+            <Explore />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
