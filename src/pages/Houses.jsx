@@ -58,9 +58,9 @@ const Houses = () => {
             Choose from curated deals that include amenities, local experiences,
             and more to make your trip memorable.
           </p>
-          <div className="w-full">
-            <Explore />
-          </div>
+        </div>
+        <div className="w-full">
+          <Explore />
         </div>
       </div>
     </>
