@@ -125,7 +125,7 @@ const MobileMenu = () => {
               <MenuItem
                 icon={<FiPhone />}
                 label="Contact"
-                to="/kontakti"
+                to="/contact"
                 setMenuOpen={setMenuOpen}
                 delay={0.25}
               />

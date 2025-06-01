@@ -11,16 +11,12 @@ import Navbar from "./components/common/Navbar";
 import { closeDropdown, closeNotifications } from "./features/uiSlice";
 
 import {
-  Blog,
-  BlogPost,
   Bookings,
   BookingSuccess,
   CarDetails,
   CarRental,
   CarsSearch,
   ConfirmBooking,
-  // Flights,
-  FlightsSearch,
   Home,
   // PacketDetails,
   Login,
@@ -42,6 +38,7 @@ import Houses from "./pages/Houses";
 import CityGuide from "./pages/CityGuide";
 import HouseDetails from "./components/houses/HouseDetails";
 import Layout from "./components/common/Layout";
+import Contact from "./pages/Contact";
 
 function App() {
   // const [showButton, setShowButton] = useState(false);
@@ -144,6 +141,14 @@ function App() {
             }
           />
           <Route
+            path="/contact"
+            element={
+              <Layout>
+                <Contact />
+              </Layout>
+            }
+          />
+          <Route
             path="/hotels/search"
             element={
               <Layout>
@@ -159,18 +164,11 @@ function App() {
               </Layout>
             }
           />
-          <Route
-            path="/flights/search"
-            element={
-              <Layout>
-                <FlightsSearch />
-              </Layout>
-            }
-          />
+
           {/* <Route path="/profile" element={<Profile />} /> */}
           <Route path="/wallet" element={<Wallet />} />
           <Route path="/rewards" element={<Rewards />} />
-          <Route path="/blog" element={<Blog />} />
+
           <Route
             path="/bookings"
             element={
@@ -211,7 +209,7 @@ function App() {
               </Layout>
             }
           />
-          <Route path="/blog/:id" element={<BlogPost />} />
+
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<PageNotFound />} />
