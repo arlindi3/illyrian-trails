@@ -1,10 +1,10 @@
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { trendingCities } from "../../data/dummyData";
+import { tourPackages } from "../../data/dummyData";
 
 const TrendingGuides = () => {
   return (
-    <div className="pt-12 pb-20 bg-gradient-to-b from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="pt-12 pb-20">
       <div className="text-center mb-8">
         <h1 className="heading text-gray-800 dark:text-white capitalize tracking-wide">
           Trending Guides
@@ -14,7 +14,7 @@ const TrendingGuides = () => {
         </p>
       </div>
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {trendingCities.map(
+        {tourPackages.map(
           ({ id, name, rating, image, number_of_reviews, price }) => (
             <div
               key={id}

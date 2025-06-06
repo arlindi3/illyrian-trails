@@ -2,7 +2,7 @@ import Banner from "../components/common/Banner";
 import GuidesCity from "../banners/city-guide.jpg";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { trendingCities } from "../data/dummyData";
+import { tourPackages } from "../data/dummyData";
 import { Explore } from "../components/home";
 const CityGuide = () => {
   const handleGuideClick = (city) => {
@@ -27,7 +27,7 @@ const CityGuide = () => {
             </p>
           </div>
           <div className="mt-6 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {trendingCities.map(
+            {tourPackages.map(
               ({ id, name, rating, image, number_of_reviews, price }) => (
                 <div
                   key={id}
@@ -39,7 +39,7 @@ const CityGuide = () => {
                     className="w-full h-48 object-cover"
                   />
                   <div className="p-6 flex flex-col flex-1">
-                    <h2 className="text-2xl font-bold mb-2 text-primary dark:text-white">
+                    <h2 className="text-2xl font-bold mb-2  dark:text-white">
                       {name}
                     </h2>
                     <div className="flex items-center gap-x-2 mb-3">
@@ -59,7 +59,7 @@ const CityGuide = () => {
                     </div>
                     <Link
                       to={`/packet/${id}/confirm-booking`}
-                      className="btn btn-secondary text-lg py-3 mt-auto rounded-lg shadow hover:bg-secondaryYellow/90 transition-colors duration-200"
+                      className="btn btn-primary text-lg py-3 mt-auto rounded-lg shadow hover:bg-secondaryYellow/90 transition-colors duration-200"
                       onClick={() =>
                         handleGuideClick({
                           id,
@@ -79,11 +79,11 @@ const CityGuide = () => {
             )}
           </div>
         </div>
-        <div className="mt-16 bg-white/80 rounded-2xl shadow-xl p-8 flex flex-col items-center">
-          <h2 className="text-3xl font-bold mb-3 text-blue-800">
+        <div className="mt-16 bg-white/80 dark:bg-card-dark/90 rounded-2xl shadow-xl p-8 flex flex-col items-center">
+          <h2 className="text-3xl font-bold mb-3 text-blue-800 dark:text-white">
             Recommended Packages
           </h2>
-          <p className="mb-8 text-gray-600 max-w-2xl text-center">
+          <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
             Explore our exclusive packages for a complete and comfortable stay.
             Choose from curated deals that include amenities, local experiences,
             and more to make your trip memorable.

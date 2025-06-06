@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import {
   // BestPlaces,
   Explore,
-  FeaturedDestinations,
+  // FeaturedDestinations,
   // TopTours,
   TravelPassion,
   TrendingGuides,
@@ -41,14 +41,14 @@ const Home = () => {
         >
           <Explore />
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <FeaturedDestinations />
-        </motion.div>
+        </motion.div> */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -5,7 +5,7 @@ const TravelPassion = () => {
   return (
     <div className="pt-10 pb-16">
       <h1 className="heading mb-3">travel your passion</h1>
-      <p>most brilliant reasons Estrada should be your one-stop-shop!</p>
+      <p>most brilliant reasons Albania should be your one-stop-shop!</p>
       <div className="mt-5 flex flex-wrap gap-4">
         {travelPassions.map(
           ({ id, name, image, number_of_reviews, rating }) => (
