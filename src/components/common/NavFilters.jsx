@@ -7,8 +7,8 @@ import { NavLink } from "react-router-dom";
 
 const navItems = [
   { to: "/", label: "Home", icon: <MdExplore size={24} /> },
-  { to: "/houses", label: "Houses", icon: <BiBed size={24} /> },
   { to: "/city-guide", label: "City Guide", icon: <MdMap size={24} /> },
+  { to: "/houses", label: "Houses", icon: <BiBed size={24} /> },
   { to: "/speedboat", label: "Speedboat", icon: <GiSpeedBoat size={24} /> },
   { to: "/cars", label: "Car Rental", icon: <BiCar size={24} /> },
   { to: "/motors", label: "Motors Rental", icon: <FaMotorcycle size={24} /> },
@@ -26,7 +26,7 @@ const navItems = [
 
 const NavFilters = () => {
   return (
-    <div className="w-full px-4 py-6 bg-white dark:bg-card-dark shadow-lg dark:shadow-none rounded-xl max-w-[95%] mx-auto -mt-10">
+    <div className="w-full px-4 py-4 bg-white dark:bg-card-dark shadow-lg dark:shadow-none rounded-xl max-w-[95%] mx-auto mt-3">
       <div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4">
           {navItems.map(({ to, label, icon }) => (

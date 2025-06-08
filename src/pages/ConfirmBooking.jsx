@@ -2,12 +2,15 @@ import { useParams } from "react-router-dom";
 import { FaStar, FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
 import { tourPackages } from "../data/dummyData";
 import { useState } from "react";
+// import { useNavigate } from "react-router-dom";
 
 const ConfirmBooking = () => {
   const { id } = useParams();
+  // const navigate = useNavigate();
   const guide = tourPackages.find((city) => String(city.id) === String(id));
   const [selectedImg, setSelectedImg] = useState(guide?.gallery?.[0] || "");
-  console.log("guide.itinerary:", guide.itinerary);
+  // const [isBooked, setIsBooked] = useState(false);
+
   if (!guide) {
     return (
       <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-sky-100 to-blue-200 dark:from-gray-900 dark:to-gray-800">
@@ -23,6 +26,22 @@ const ConfirmBooking = () => {
       </div>
     );
   }
+
+  // const handleBooking = () => {
+  //   setIsBooked(true);
+  //   setTimeout(() => {
+  //     navigate("/booking-confirmed", { state: { guideId: guide.id } });
+  //   }, 1500);
+  // };
+
+  const handleBooking = () => {
+    // Replace with your WhatsApp number (in international format, no + or spaces)
+    const phoneNumber = "355673869970";
+    const message = encodeURIComponent(
+      `Hello, I would like to book the "${guide.name}" tour in ${guide.location}.`
+    );
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+  };
 
   return (
     <div className="min-h-screen pt-24 px-4 md:px-10 pb-16 bg-white dark:bg-gray-900">
@@ -192,11 +211,14 @@ const ConfirmBooking = () => {
 
         {/* Confirm Booking Button */}
         <div className="text-center pt-6">
-          <button className="bg-primary hover:bg-primary text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-all tracking-wide  hover:scale-105">
-            Confirm Booking
+          <button
+            className="bg-primary hover:bg-primary text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-all tracking-wide  hover:scale-105"
+            onClick={handleBooking}
+          >
+            Book Now on WhatsApp
           </button>
           <p className="mt-4 text-base">
-            You will receive confirmation via email.
+            You will be redirected to WhatsApp to complete your booking.
           </p>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FiMenu, FiChevronDown, FiMap, FiHome, FiPhone } from "react-icons/fi";
+import { AiOutlineInfoCircle } from "react-icons/ai";
 import { BiCar } from "react-icons/bi";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
@@ -120,6 +121,15 @@ const MobileMenu = () => {
                   )}
                 </AnimatePresence>
               </motion.div>
+
+              {/* About */}
+              <MenuItem
+                icon={<AiOutlineInfoCircle />} // Changed icon to FiMap for About
+                label="About"
+                to="/about"
+                setMenuOpen={setMenuOpen}
+                delay={0.22}
+              />
 
               {/* Contact */}
               <MenuItem

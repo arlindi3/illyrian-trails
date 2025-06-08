@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/common/Banner";
+// import Banner from "../components/common/Banner";
 import NavFilters from "../components/common/NavFilters";
 // import HomeBanner from "../banners/banner.jpg";
 import HomeBanner from "../banners/saranda.jpg";
@@ -19,11 +19,37 @@ const Home = () => {
 
   return (
     <div>
-      <Banner
-        banner={HomeBanner}
-        title="Adventure Nature Culture"
-        imgClassName="w-full h-full object-cover object-center bg-no-repeat bg-cover"
-      />
+      <div className="relative w-full h-[350px] md:h-[500px] flex items-center justify-center overflow-hidden">
+        <img
+          src={HomeBanner}
+          alt="Home Banner"
+          className="absolute inset-0 w-full h-full object-cover object-center brightness-75 transition-all duration-500"
+        />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 mt-24 md:mt-0">
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white drop-shadow-lg mb-4 animate-fadeInDown">
+            Adventure <span className="text-primary-500">Nature</span> Culture
+          </h1>
+          <p className="text-lg md:text-2xl text-white/90 mb-6 max-w-2xl animate-fadeInUp">
+            Discover breathtaking destinations, unique experiences, and your
+            next unforgettable journey.
+          </p>
+          <div className="mt-4 flex flex-col sm:flex-row gap-3 animate-fadeInUp">
+            <a
+              href="/#/city-guide"
+              className="bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-6 rounded shadow transition"
+            >
+              Book Your Trip
+            </a>
+            <a
+              href="/#/contact"
+              className="bg-white/90 hover:bg-white text-primary-700 font-semibold py-2 px-6 rounded shadow transition"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20 pointer-events-none" />
+      </div>
       <NavFilters url="/hotels/search" />
       <motion.div
         className="mt-5 px-[3%] md:px-[6%]"

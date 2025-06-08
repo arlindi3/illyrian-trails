@@ -19,7 +19,6 @@ import { packagesData } from "../data/dummyData";
 const PacketDetails = () => {
   const { id } = useParams();
   const packet = packagesData.find((item) => item.id === id);
-
   if (!packet) {
     return <div className="text-center mt-10 text-xl">Paketa nuk u gjet.</div>;
   }
@@ -40,14 +39,15 @@ const PacketDetails = () => {
             <span>{packet.rating}</span>
           </div>
           <div className="flex gap-2 mt-2">
-            {packet.tags.map((tag, index) => (
-              <span
-                key={index}
-                className="px-2 py-1 text-xs rounded bg-gray-100 text-gray-600"
-              >
-                {tag}
-              </span>
-            ))}
+            {packet.tags &&
+              packet.tags.map((tag, index) => (
+                <span
+                  key={index}
+                  className="px-2 py-1 text-xs rounded bg-gray-100 text-gray-600"
+                >
+                  {tag}
+                </span>
+              ))}
           </div>
         </div>
 
@@ -55,20 +55,23 @@ const PacketDetails = () => {
         <div className="flex flex-wrap gap-4">
           <div className="flex-1 basis-[30rem] overflow-hidden">
             <img
-              src={packet.images[0]}
+              src={packet.images && packet.images[0]}
               alt="main"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>
           <div className="flex-1 basis-[16rem] space-y-3">
-            {packet.images.slice(1).map((img, i) => (
-              <img
-                key={i}
-                src={img}
-                alt={`img-${i}`}
-                className="w-full h-[150px] object-cover rounded-xl"
-              />
-            ))}
+            {packet.images &&
+              packet.images
+                .slice(1)
+                .map((img, i) => (
+                  <img
+                    key={i}
+                    src={img}
+                    alt={`img-${i}`}
+                    className="w-full h-[150px] object-cover rounded-xl"
+                  />
+                ))}
           </div>
         </div>
 
@@ -85,22 +88,22 @@ const PacketDetails = () => {
               <Description description={packet.description} />
             </TabPanel>
             <TabPanel>
-              <Features />
+              <Features features={packet.features} />
             </TabPanel>
             <TabPanel>
-              <PriceDetails />
+              <PriceDetails price={packet.price} />
             </TabPanel>
             <TabPanel>
-              <Reviews />
+              <Reviews reviews={packet.reviews} />
             </TabPanel>
           </Tabs>
         </div>
 
-        <Amenities />
-        <AddReview />
+        <Amenities amenities={packet.amenities} />
+        <AddReview packetId={packet.id} />
       </div>
 
-      <Trending />
+      <Trending currentPacketId={packet.id} />
     </div>
   );
 };

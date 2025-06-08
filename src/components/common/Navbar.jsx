@@ -113,26 +113,50 @@ const Navbar = () => {
             <Notifications />
           </div> */
           /* ---------------------------------Theme toggle------------------------------ */
-          <div className="gap-3 px-2 py-1 rounded-lg select-none flex-align-center bg-slate-100 dark:bg-main-dark w-fit ml-auto md:mr-18">
-            <div
-              className={`sm:cursor-pointer ${
-                mode === "light" &&
-                "bg-slate-300 dark:bg-dark-light rounded-lg px-3 py-1 "
-              }`}
-              onClick={setLightMode}
-            >
-              <FiSun />
+          <>
+            <div className="gap-3 px-2 py-1 rounded-lg select-none flex-align-center bg-transparent w-fit ml-auto md:mr-18">
+              <Link
+                to="/about"
+                className="px-4 py-2 rounded-lg font-medium hover:underline transition-colors hidden md:inline-block bg-transparent hover:bg-transparent text-gray-800 dark:text-white"
+              >
+                About
+              </Link>
+              <Link
+                to="/contact"
+                className="px-4 py-2 rounded-lg font-medium hover:underline transition-colors hidden md:inline-block bg-transparent hover:bg-transparent text-gray-800 dark:text-white"
+              >
+                Contact
+              </Link>
+              {/* <a
+                href="tel:+1234567890"
+                className="px-4 py-2 rounded-lg font-medium hover:underline transition-colors hidden md:inline-block bg-transparent hover:bg-transparent text-gray-800 dark:text-white"
+              >
+                +355 673869970
+              </a> */}
+              <div
+                className={`sm:cursor-pointer ${
+                  mode === "light"
+                    ? "bg-yellow-200 border border-yellow-400 shadow rounded-lg px-3 py-1"
+                    : "bg-transparent"
+                } text-gray-800 dark:text-white transition-colors`}
+                onClick={setLightMode}
+                title="Light mode"
+              >
+                <FiSun />
+              </div>
+              <div
+                className={`sm:cursor-pointer ${
+                  mode === "dark"
+                    ? "bg-slate-700 border border-slate-500 shadow rounded-lg px-3 py-1"
+                    : "bg-transparent"
+                } text-gray-800 dark:text-white transition-colors`}
+                onClick={setDarkMode}
+                title="Dark mode"
+              >
+                <FiMoon />
+              </div>
             </div>
-            <div
-              className={`sm:cursor-pointer ${
-                mode === "dark" &&
-                "bg-slate-300 dark:bg-dark-light rounded-lg px-3 py-1 "
-              }`}
-              onClick={setDarkMode}
-            >
-              <FiMoon />
-            </div>
-          </div>
+          </>
           /*------------------------------- Profile Dropdown toggle-------------------------------------------- */
         }
         {/* <div className="relative flex-shrink-0 space-x-1 flex-align-center md:pl-4">

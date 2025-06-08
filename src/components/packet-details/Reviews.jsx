@@ -12,8 +12,8 @@ const Reviews = () => {
               className="w-10 h-10 rounded-full"
             />
             <div>
-              <h1 className="font-semibold">Wabweni Brian</h1>
-              <p>Uganda</p>
+              <h1 className="font-semibold">KING</h1>
+              <p>Egypt</p>
               <div className="flex-align-center gap-x-3 mt-3">
                 {Array.apply(null, { length: 5 }).map((_, i) => (
                   <div key={i} className="text-secondaryYellow">

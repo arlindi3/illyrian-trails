@@ -53,7 +53,7 @@ const TrendingGuides = () => {
                   </div>
                   <Link
                     to={`/packet/${id}/confirm-booking`}
-                    className="btn btn-secondary px-5 py-2 rounded-full shadow hover:scale-105 transition-transform duration-200"
+                    className="btn btn-primary px-5 py-2 rounded-full shadow hover:scale-105 transition-transform duration-200"
                   >
                     Book Now
                   </Link>

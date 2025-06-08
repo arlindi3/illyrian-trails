@@ -39,6 +39,7 @@ import CityGuide from "./pages/CityGuide";
 import HouseDetails from "./components/houses/HouseDetails";
 import Layout from "./components/common/Layout";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   // const [showButton, setShowButton] = useState(false);
@@ -145,6 +146,14 @@ function App() {
             element={
               <Layout>
                 <Contact />
+              </Layout>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Layout>
+                <About />
               </Layout>
             }
           />

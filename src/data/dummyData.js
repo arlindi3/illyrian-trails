@@ -239,8 +239,18 @@ export const packagesData = [
     rating: 4.5,
     tags: ["Good", "Popular"],
     type: "house",
-    description: "A cozy beach house in Dhermi with 2 bedrooms...",
-    price: "33",
+    description:
+      "A cozy beach house in Durrës with 2 bedrooms, sea view, and modern amenities. Perfect for families or small groups looking for a relaxing stay by the Adriatic coast.",
+    features: [
+      "2 Bedrooms",
+      "Sea View",
+      "Free WiFi",
+      "Breakfast included",
+      "Air Conditioning",
+      "Private Parking",
+    ],
+    price: "100",
+    reviews: 147,
   },
   {
     id: "2",
@@ -255,8 +265,17 @@ export const packagesData = [
     rating: 4.7,
     tags: ["Nature", "Top Rated"],
     type: "tour",
-    description: "Explore the magical Blue Eye with a local guide...",
-    price: "33",
+    description:
+      "Explore the magical Blue Eye with a local guide. Discover the crystal-clear spring, enjoy a scenic walk, and learn about the area's unique ecosystem.",
+    features: [
+      "Guided Tour",
+      "Nature Walk",
+      "Photo Stops",
+      "Local Guide",
+      "Entrance Ticket Included",
+    ],
+    price: "55",
+    reviews: 124,
   },
   {
     id: "3",
@@ -271,10 +290,18 @@ export const packagesData = [
     rating: 4.8,
     tags: ["Boat", "Adventurous"],
     type: "boat",
-    description: "A thrilling speedboat tour through Ksamil Islands...",
-    price: "33",
+    description:
+      "A thrilling speedboat tour through Ksamil Islands. Swim, sunbathe, and explore hidden beaches with an experienced skipper.",
+    features: [
+      "Speedboat Tour",
+      "Island Hopping",
+      "Swimming Stops",
+      "Experienced Skipper",
+      "Life Jackets Provided",
+    ],
+    price: "70",
+    reviews: 88,
   },
-
   {
     id: "4",
     title: "Guide ne Apolloni",
@@ -286,10 +313,19 @@ export const packagesData = [
       "/images/ksamil4.jpg",
     ],
     rating: 4.8,
-    tags: ["Boat", "Adventurous"],
-    type: "boat",
-    description: "A thrilling speedboat tour through Ksamil Islands...",
-    price: "33",
+    tags: ["History", "Culture"],
+    type: "tour",
+    description:
+      "Discover the ancient ruins of Apollonia with a professional guide. Walk through archaeological sites and learn about Greek and Roman history.",
+    features: [
+      "Guided Archaeological Tour",
+      "Museum Visit",
+      "Ancient Ruins",
+      "Professional Guide",
+      "Entrance Fees Included",
+    ],
+    price: "35",
+    reviews: 92,
   },
   {
     id: "5",
@@ -302,10 +338,19 @@ export const packagesData = [
       "/images/ksamil4.jpg",
     ],
     rating: 4.8,
-    tags: ["Boat", "Adventurous"],
-    type: "boat",
-    description: "A thrilling speedboat tour through Ksamil Islands...",
-    price: "33",
+    tags: ["Adventure", "Nature"],
+    type: "activity",
+    description:
+      "Enjoy a guided horse riding experience along scenic trails. Suitable for beginners and experienced riders, with safety equipment provided.",
+    features: [
+      "Guided Horse Riding",
+      "Scenic Trails",
+      "Safety Equipment",
+      "Suitable for All Levels",
+      "Photo Opportunities",
+    ],
+    price: "45",
+    reviews: 73,
   },
   {
     id: "6",
@@ -318,10 +363,19 @@ export const packagesData = [
       "/images/ksamil4.jpg",
     ],
     rating: 4.8,
-    tags: ["Boat", "Adventurous"],
-    type: "boat",
-    description: "A thrilling speedboat tour through Ksamil Islands...",
-    price: "33",
+    tags: ["Adventure", "Off-road"],
+    type: "activity",
+    description:
+      "Experience the thrill of off-road adventure with a 4-wheeler motorcycle guide. Explore rugged terrain and enjoy breathtaking views.",
+    features: [
+      "4-Wheeler Motorcycle",
+      "Off-road Adventure",
+      "Safety Gear Provided",
+      "Guided Tour",
+      "Suitable for Beginners",
+    ],
+    price: "60",
+    reviews: 65,
   },
 ];
 export const tourPackages = [
@@ -491,28 +545,28 @@ export const tourPackages = [
 export const travelPassions = [
   {
     id: 1,
-    name: "Korçë dhe Voskopojë",
+    name: "Korçë and Voskopoja",
     rating: "4.6",
     number_of_reviews: 147,
     image: `${process.env.PUBLIC_URL}/images/Korce-Voskopoje.jpg`,
   },
   {
     id: 2,
-    name: "Udhëtim me Gomone",
+    name: "Speedboat Trip",
     rating: "4.6",
     number_of_reviews: 147,
     image: `${process.env.PUBLIC_URL}/images/gomone-durres.png`,
   },
   {
     id: 3,
-    name: "Guidë me Kuaj",
+    name: "Horse Riding Guide",
     rating: "4.6",
     number_of_reviews: 147,
     image: `${process.env.PUBLIC_URL}/images/kuaj-guide.jpg`,
   },
   {
     id: 4,
-    name: "Guidë me Motorra 4 Goma",
+    name: "4-Wheeler Motorcycle Guide",
     rating: "4.6",
     number_of_reviews: 147,
     image: `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
@@ -572,27 +626,6 @@ export const related = [
   },
 ];
 
-export const popularDestinations = [
-  {
-    id: 1,
-    name: "Japan",
-    car_pickups: 86,
-    image: `${process.env.PUBLIC_URL}/images/place (2).jpg`,
-  },
-  {
-    id: 2,
-    name: "Bali",
-    car_pickups: 47,
-    image: `${process.env.PUBLIC_URL}/images/place (9).jpg`,
-  },
-  {
-    id: 3,
-    name: "London",
-    car_pickups: 35,
-    image: `${process.env.PUBLIC_URL}/images/place (19).jpg`,
-  },
-];
-
 export const brands = [
   {
     id: 1,
@@ -617,78 +650,5 @@ export const brands = [
   {
     id: 6,
     image: `${process.env.PUBLIC_URL}/images/cars/logo6.png`,
-  },
-];
-
-export const blogPosts = [
-  {
-    id: 1,
-    title: "9 Ways to Flight booking of the Competition as a Retailer",
-    excerpt:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
-    date_posted: "Jan 30, 2023",
-    image: `${process.env.PUBLIC_URL}/images/blog/blog1.jpg`,
-    category: "Flight Booking",
-    author: {
-      name: "Wabweni Brian",
-      role: "Front-end Developer",
-      avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
-    },
-  },
-  {
-    id: 2,
-    title: "Top 20 Hotel Booking System By Domain Authority",
-    excerpt:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
-    date_posted: "Jan 30, 2023",
-    image: `${process.env.PUBLIC_URL}/images/blog/blog2.jpg`,
-    category: "Flight Booking",
-    author: {
-      name: "Wabweni Brian",
-      role: "Front-end Developer",
-      avatar: `${process.env.PUBLIC_URL}/images/avatar.png`,
-    },
-  },
-  {
-    id: 3,
-    title: "Top 20 Hotel Booking System By Domain Authority",
-    excerpt:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
-    date_posted: "Jan 30, 2023",
-    image: `${process.env.PUBLIC_URL}/images/blog/blog3.jpg`,
-    category: "Flight Booking",
-    author: {
-      name: "Wabweni Brian",
-      role: "Front-end Developer",
-      avatar: `${process.env.PUBLIC_URL}/images/avatar-1.png`,
-    },
-  },
-  {
-    id: 4,
-    title: "Top 20 Hotel Booking System By Domain Authority",
-    excerpt:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
-    date_posted: "Jan 30, 2023",
-    image: `${process.env.PUBLIC_URL}/images/blog/blog4.jpg`,
-    category: "Flight Booking",
-    author: {
-      name: "Wabweni Brian",
-      role: "Front-end Developer",
-      avatar: `${process.env.PUBLIC_URL}/images/avatar-2.png`,
-    },
-  },
-  {
-    id: 5,
-    title: "Top 20 Hotel Booking System By Domain Authority",
-    excerpt:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure delectus, maxime aliquam assumenda architecto est maiores numquam ipsa magni reiciendis sit natus sequi eum, at repellat quibusdam nisi asperiores fugiat labore fugit atque blanditiis quidem itaque laudantium! Nemo, eum dignissimos?",
-    date_posted: "Jan 30, 2023",
-    image: `${process.env.PUBLIC_URL}/images/blog/blog5.jpg`,
-    category: "Flight Booking",
-    author: {
-      name: "Wabweni Brian",
-      role: "Front-end Developer",
-      avatar: `${process.env.PUBLIC_URL}/images/avatar-3.png`,
-    },
   },
 ];
