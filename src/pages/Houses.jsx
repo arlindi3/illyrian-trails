@@ -9,19 +9,18 @@ import { Explore } from "../components/home";
 const Houses = () => {
   return (
     <div className="flex flex-col">
-      {/* Banner */}
-      <div className="relative h-48 sm:h-56 md:h-80 flex items-center justify-center overflow-hidden mb-6 md:mb-8">
+      <div className="relative h-[28rem] sm:h-[24rem] md:h-[28rem] flex items-center justify-center overflow-hidden mb-6 md:mb-8">
         <img
           src={House}
           alt="Find Your Perfect Stay"
-          className="absolute inset-0 w-full h-full object-cover opacity-0 animate-fadeIn"
+          className="absolute inset-0 w-full h-full object-cover opacity-0 animate-fadeIn brightness-75"
           style={{ animation: "fadeIn 1.5s forwards" }}
         />
         <div
           className="pointer-events-none absolute left-0 right-0 bottom-0 h-16 sm:h-20 md:h-32"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--tw-gradient-to, #f3f4f6) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--tw-gradient-to, #000) 100%)",
           }}
         />
         <div className="relative z-10 bg-white/80 dark:bg-gray-900/80 rounded-xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-lg text-center w-[95%] max-w-2xl mx-auto">
@@ -33,6 +32,11 @@ const Houses = () => {
           </p>
         </div>
       </div>
+      <div className="mb-8 max-w-2xl mx-auto text-center">
+        <p className="text-lg sm:text-xl text-blue-800 dark:text-blue-200 font-medium">
+          Start your journey to the perfect getaway today!
+        </p>
+      </div>
       <style>
         {`
           @keyframes fadeIn {
@@ -42,7 +46,7 @@ const Houses = () => {
       </style>
       {/* Houses List */}
       <div className="px-2 sm:px-4 md:px-12 max-w-6xl mx-auto w-full">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-blue-800 dark:text-white text-center">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 dark:text-white text-center">
           Available Houses
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">

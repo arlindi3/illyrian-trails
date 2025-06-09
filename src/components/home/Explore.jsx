@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+// import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 // import { FaStar } from "react-icons/fa";
 // import { BiBed, BiMap } from "react-icons/bi";
 import { packagesData } from "../../data/dummyData";
@@ -18,73 +18,84 @@ const Explore = () => {
   };
   return (
     <div className="pt-12 pb-20">
-      <div className="flex-center-between mb-10 px-6">
+      <div className="flex items-center justify-between px-6 mb-4">
         <div>
-          <h1 className="heading text-4xl font-extrabold mb-2">
-            The Best Packages in Albania
-          </h1>
-          <p className="mt-2 text-gray-500 text-xl dark:text-gray-300">
-            Exquisite and stunning places to spend your holidays
+          <h1 className="text-3xl font-bold">Explore Our Packages</h1>
+          <p className="text-gray-600 dark:text-gray-300 text-base mt-1">
+            Discover adventure, culture, family, and luxury packages across
+            Albania.
           </p>
         </div>
-        <div className="flex-align-center gap-x-4">
+        <div className="flex gap-2">
           <button
-            className={`w-12 h-12 rounded-full grid place-items-center bg-white dark:bg-gray-800 shadow-lg border transition hover:bg-primary hover:text-white sm:cursor-pointer ${
-              !isScroll && "opacity-50 cursor-not-allowed"
+            aria-label="Scroll left"
+            className={`p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-primary hover:text-white transition ${
+              !isScroll ? "opacity-50 cursor-not-allowed" : ""
             }`}
             onClick={() => scrollContainer("left")}
             disabled={!isScroll}
-            aria-label="Scroll left"
+            type="button"
           >
-            <FiChevronLeft size={26} />
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
           </button>
           <button
-            className="w-12 h-12 rounded-full grid place-items-center bg-white dark:bg-gray-800 shadow-lg border transition hover:bg-primary hover:text-white sm:cursor-pointer"
-            onClick={() => scrollContainer("right")}
             aria-label="Scroll right"
+            className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 hover:bg-primary hover:text-white transition"
+            onClick={() => scrollContainer("right")}
+            type="button"
           >
-            <FiChevronRight size={26} />
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+              <path
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
           </button>
         </div>
       </div>
       <div
-        className="flex-align-center gap-x-10 overflow-x-auto hide-scrollbar scroll-smooth px-6 py-4"
+        className="flex gap-x-6 overflow-x-auto hide-scrollbar px-6 py-4"
         ref={exploreContainer}
       >
         {packagesData.map((packet) => (
           <Link
             to={`/packets/${packet.id}`}
             key={packet.id}
-            className="min-w-[340px] max-w-sm"
+            className="min-w-[260px] max-w-xs"
           >
-            <div className="bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-6 hover:shadow-3xl transition-all duration-200 border border-gray-100 dark:border-gray-700 hover:border-primary group flex flex-col h-full">
-              <div className="relative">
-                <img
-                  src={packet.images[0]}
-                  alt={packet.title}
-                  className="w-full h-64 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-200"
-                />
-                <span className="absolute top-3 right-3 bg-white/90 dark:bg-gray-800/90 rounded-full px-4 py-1.5 text-base font-bold text-primary shadow-lg">
-                  €{packet.price}
-                </span>
-              </div>
-              <div className="flex items-center gap-x-2 mt-4">
-                <FaStar className="text-secondaryYellow" />
-                <p className="font-semibold text-gray-700 dark:text-gray-200 text-lg">
+            <div className="bg-white dark:bg-gray-900 rounded-xl shadow p-4 flex flex-col h-full border border-gray-100 dark:border-gray-700 hover:border-primary transition">
+              <img
+                src={packet.images[0]}
+                alt={packet.title}
+                className="w-full h-40 object-cover rounded-lg mb-3"
+              />
+              <div className="flex items-center gap-x-2 mb-2">
+                <FaStar className="text-yellow-400" />
+                <span className="text-gray-700 dark:text-gray-200 text-base font-semibold">
                   {packet.rating}
-                </p>
-                <span className="ml-auto text-sm text-gray-400 dark:text-gray-400">
+                </span>
+                <span className="ml-auto text-xs text-gray-400">
                   {packet.location}
                 </span>
               </div>
-              <h2 className="text-xl font-bold mt-3  group-hover:text-secondary transition dark:text-secondary">
-                {packet.title}
-              </h2>
-              <div className="flex mt-4 justify-end">
-                <span className="inline-block text-sm font-semibold text-blue-700 bg-blue-100 dark:bg-blue-600 dark:text-white rounded-full px-5 py-2 shadow group-hover:bg-blue-700 group-hover:text-white transition-all duration-150">
-                  Click for more details
-                </span>
-              </div>
+              <h2 className="text-lg font-bold mb-1">{packet.title}</h2>
+              <span className="text-primary font-bold text-base mb-2">
+                €{packet.price}
+              </span>
+              <span className="text-xs text-gray-500 mt-auto">
+                {packet.type}
+              </span>
             </div>
           </Link>
         ))}

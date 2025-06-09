@@ -105,6 +105,22 @@ const ConfirmBooking = () => {
                 {guide.gallery.length} Photos
               </span>
             </div>
+            {/* Video */}
+            {guide.video && (
+              <div className="mt-4">
+                <video
+                  controls
+                  className="w-full rounded-xl shadow"
+                  style={{ maxHeight: 200 }}
+                >
+                  <source src={guide.video} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <div className="text-center text-sm mt-2 text-gray-500 dark:text-gray-300">
+                  Place Video
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
@@ -200,7 +216,7 @@ const ConfirmBooking = () => {
                 <b>Duration:</b> {guide.duration}
               </span>
               <span>
-                <b>Group Size:</b> {guide.groupSize}
+                <b>Group Size:</b> {guide.group_size}
               </span>
               <span>
                 <b>Language:</b> {guide.language}

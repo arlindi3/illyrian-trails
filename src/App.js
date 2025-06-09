@@ -210,6 +210,7 @@ function App() {
               </Layout>
             }
           />
+
           <Route
             path="/cars/:id"
             element={

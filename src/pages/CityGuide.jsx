@@ -12,7 +12,7 @@ const CityGuide = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       {/* Banner */}
-      <div className="relative h-80 md:h-[28rem] flex items-center justify-center overflow-hidden mb-8">
+      <div className="relative h-[28rem] sm:h-[24rem] md:h-[28rem] flex items-center justify-center overflow-hidden mb-6 md:mb-8">
         <img
           src={GuidesCity}
           alt="City Guide Banner"
@@ -23,7 +23,7 @@ const CityGuide = () => {
           className="pointer-events-none absolute left-0 right-0 bottom-0 h-24 md:h-32"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(255,255,255,0) 0%, var(--tw-gradient-to, #f3f4f6) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 100%)",
           }}
         />
         <div className="relative z-10 bg-white/70 dark:bg-gray-900/70 rounded-xl px-8 py-6 shadow-lg text-center">

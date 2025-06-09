@@ -43,9 +43,12 @@ const SpeedBoat = () => {
                     €{tour.price}
                   </span>
                 </div>
-                <button className="mt-4 w-full bg-primary text-white py-2 rounded-full hover:bg-primary/90 transition">
+                <a
+                  href={`/confirm-booking/${tour.id}`}
+                  className="block mt-4 w-full bg-primary text-white py-2 rounded-full text-center hover:bg-primary/90 transition"
+                >
                   Book Now
-                </button>
+                </a>
               </div>
             </div>
           ))}

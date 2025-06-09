@@ -28,7 +28,7 @@ const HouseDetails = () => {
         <span className="text-sm text-gray-500">({house.reviews} reviews)</span>
       </div>
 
-      {/* Imazhet */}
+      {/* Images */}
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
         {house.images.map((img, i) => (
           <img
@@ -40,12 +40,12 @@ const HouseDetails = () => {
         ))}
       </div>
 
-      {/* Tabs me përshkrim, çmim, etj. */}
+      {/* Tabs with description, price, etc. */}
       <div className="mt-8">
         <div className="mt-5 flex-align-center gap-2 sm:gap-3 flex-col sm:flex-row">
           <div className="flex-align-center gap-x-2 sm:gap-x-3">
             <span className="text-sm text-green-500 bg-green-500/20 px-2 rounded">
-              4.5
+              {house.rating}
             </span>
             <span className="text-sm text-secondaryYellow bg-secondaryYellow/20 px-2 rounded">
               Good
@@ -57,7 +57,7 @@ const HouseDetails = () => {
           <div className="flex-align-center gap-x-3">
             {Array.from({ length: 5 }).map((_, i) => (
               <div key={i} className="text-secondaryYellow">
-                {i < 4 ? <FaStar /> : <FaStarHalfAlt />}
+                {i < Math.floor(house.rating) ? <FaStar /> : <FaStarHalfAlt />}
               </div>
             ))}
           </div>
@@ -66,9 +66,9 @@ const HouseDetails = () => {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
           <div className="lg:col-span-2">
             <h2 className="text-3xl font-bold capitalize mt-4">
-              cozy house for sale
+              {house.title}
             </h2>
-            <p className="mt-2">New York, USA</p>
+            <p className="mt-2">{house.location}</p>
 
             <div className="pt-10">
               <TabWrapper>
@@ -79,21 +79,21 @@ const HouseDetails = () => {
                   <Tab>Reviews</Tab>
                 </TabList>
                 <TabPanel>
-                  <Description />
+                  <Description description={house.description} />
                 </TabPanel>
                 <TabPanel>
-                  <Features />
+                  <Features features={house.features} />
                 </TabPanel>
                 <TabPanel>
-                  <PriceDetails />
+                  <PriceDetails price={house.price} />
                 </TabPanel>
                 <TabPanel>
-                  <Reviews />
+                  <Reviews reviews={house.reviewsData} />
                 </TabPanel>
               </TabWrapper>
             </div>
 
-            <Amenities />
+            <Amenities amenities={house.amenities} />
             <button className="btn btn-primary mt-5">more details</button>
           </div>
           <p className="mt-4">{house.description}</p>
