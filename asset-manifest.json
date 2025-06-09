@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ilyrian-trails/static/css/main.4a5a61ea.css",
-    "main.js": "/ilyrian-trails/static/js/main.5cb85ce4.js",
+    "main.css": "/ilyrian-trails/static/css/main.3616877b.css",
+    "main.js": "/ilyrian-trails/static/js/main.251e7e9a.js",
     "static/media/saranda.jpg": "/ilyrian-trails/static/media/saranda.96657a486f6c8b7e5e21.jpg",
     "static/media/banner.jpg": "/ilyrian-trails/static/media/banner.4afc4bf701fe215908fc.jpg",
     "static/media/car.jpg": "/ilyrian-trails/static/media/car.55aedc4773038ab5145f.jpg",
@@ -13,11 +13,11 @@
     "static/media/EAHORA M1P PLUS― the most popular electric….jpg": "/ilyrian-trails/static/media/EAHORA M1P PLUS― the most popular electric….fe9dcf59d1f2b4dba0a8.jpg",
     "static/media/bootlove • Instagram.jpg": "/ilyrian-trails/static/media/bootlove • Instagram.3873b0c36b3a684f8cb5.jpg",
     "index.html": "/ilyrian-trails/index.html",
-    "main.4a5a61ea.css.map": "/ilyrian-trails/static/css/main.4a5a61ea.css.map",
-    "main.5cb85ce4.js.map": "/ilyrian-trails/static/js/main.5cb85ce4.js.map"
+    "main.3616877b.css.map": "/ilyrian-trails/static/css/main.3616877b.css.map",
+    "main.251e7e9a.js.map": "/ilyrian-trails/static/js/main.251e7e9a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a5a61ea.css",
-    "static/js/main.5cb85ce4.js"
+    "static/css/main.3616877b.css",
+    "static/js/main.251e7e9a.js"
   ]
 }
