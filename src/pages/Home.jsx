@@ -4,6 +4,7 @@ import NavFilters from "../components/common/NavFilters";
 // import HomeBanner from "../banners/banner.jpg";
 import HomeBanner from "../banners/saranda.jpg";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import {
   // BestPlaces,
@@ -18,14 +19,13 @@ const Home = () => {
   // Import Framer Motion for animations
 
   return (
-    <div>
-      <div className="relative w-full h-[550px] md:h-[500px] flex items-center justify-center overflow-hidden">
+    <>
+      <div className="relative w-full h-[650px] md:h-[500px] flex items-center justify-center overflow-hidden">
         <img
           src={HomeBanner}
           alt="Home Banner"
           className="absolute inset-0 w-full h-full object-cover object-center brightness-60 transition-all duration-500"
         />
-        {/* Stronger overlay for better text visibility */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 pointer-events-none z-10" />
         <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 mt-24 md:mt-0">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate-fadeInDown">
@@ -35,20 +35,18 @@ const Home = () => {
             Discover breathtaking destinations, unique experiences, and your
             next unforgettable journey.
           </p>
-          <div className="mt-4 flex flex-col sm:flex-row gap-3 animate-fadeInUp">
-            <a
-              href="/city-guide"
-              className="bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-6 rounded shadow transition"
-            >
-              Book Your Trip
-            </a>
-            <a
-              href="/contact"
-              className="bg-white/90 hover:bg-white text-primary-700 font-semibold py-2 px-6 rounded shadow transition"
-            >
-              Contact Us
-            </a>
-          </div>
+          <Link
+            to="/city-guide"
+            className="bg-primary-500 hover:bg-primary-600 text-white font-semibold py-2 px-6 rounded shadow transition"
+          >
+            Book Your Trip
+          </Link>
+          <Link
+            to="/contact"
+            className="bg-white/90 hover:bg-white text-primary-700 dark:bg-primary-400 dark:hover:bg-primary-500 dark:text-white font-semibold py-2 px-6 rounded shadow transition"
+          >
+            Contact Us
+          </Link>
         </div>
       </div>
       <NavFilters url="/hotels/search" />
@@ -93,7 +91,7 @@ const Home = () => {
           <TravelPassion />
         </motion.div>
       </motion.div>
-    </div>
+    </>
   );
 };
 

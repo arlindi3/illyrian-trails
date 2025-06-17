@@ -65,7 +65,7 @@ const Navbar = () => {
               src={
                 mode === "dark"
                   ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                  : `${process.env.PUBLIC_URL}/logo-light.png`
+                  : `${process.env.PUBLIC_URL}/logo-albania.png`
               }
               alt="logo"
               className="w-[5rem]"
@@ -77,17 +77,17 @@ const Navbar = () => {
               src={
                 mode === "dark"
                   ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                  : `${process.env.PUBLIC_URL}/logo-light.png`
+                  : `${process.env.PUBLIC_URL}/logo-albania.png`
               }
               alt="logo"
-              className="w-8"
+              className="w-16" // Increased size for mobile
             />
           </Link>
           <Link
             to="/"
             className="text-xl font-semibold text-gray-800 dark:text-white "
           >
-            Ilyrian Trails
+            {/* Ilyrian Trails */}
           </Link>
         </div>
 

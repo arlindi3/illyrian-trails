@@ -1,27 +1,27 @@
-import Horse from "../banners/bootlove • Instagram.jpg";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { horseGuides } from "../data/dummyData"; // Replace with your actual data
+import { atvGuides } from "../data/dummyData";
+import MotorBanner from "../banners/EAHORA M1P PLUS― the most popular electric….jpg";
 import { Explore } from "../components/home";
 
-const HorseGuide = () => {
+const Atv = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-card-dark dark:to-gray-900">
       {/* Banner */}
       <div className="relative h-[28rem] sm:h-[24rem] md:h-[28rem] flex items-center justify-center overflow-hidden mb-6 md:mb-8">
         <img
-          src={Horse}
-          alt="Horse Riding Banner"
+          src={MotorBanner}
+          alt="ATV Banner"
           className="absolute inset-0 w-full h-full object-cover brightness-75"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/80" />
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-tight">
-            Discover Horseback Adventures
+            ATV Adventures
           </h1>
           <p className="mt-4 text-lg md:text-2xl text-white/90 font-medium max-w-2xl">
-            Experience the beauty of Albania on horseback. Find the best horse
-            riding tours and guides for all levels.
+            Discover Albania’s rugged landscapes with our top-rated ATV tours
+            and guides.
           </p>
         </div>
       </div>
@@ -29,18 +29,18 @@ const HorseGuide = () => {
         <div className="pt-10 pb-20">
           <div className="text-center mb-10">
             <h1 className="heading text-4xl md:text-5xl font-extrabold dark:text-white">
-              Book Your Horse Riding Experience
+              Book Your ATV Guide
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              The most popular horse riding tours on TripGuide
+              The most popular ATV experiences on Ilyrian Trails
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            {horseGuides.map(
+            {atvGuides.map(
               ({
                 id,
-                name,
                 type,
+                name,
                 rating,
                 image,
                 number_of_reviews,
@@ -100,9 +100,9 @@ const HorseGuide = () => {
             You may also be interested in
           </h2>
           <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
-            Explore our exclusive packages for a complete and comfortable stay.
-            Choose from curated deals that include amenities, local experiences,
-            and more to make your trip memorable.
+            Explore our exclusive speed boat packages for an unforgettable
+            adventure. Choose from curated tours that include hidden beaches,
+            local guides, and more to make your trip truly special.
           </p>
           <div className="w-full">
             <Explore />
@@ -113,4 +113,4 @@ const HorseGuide = () => {
   );
 };
 
-export default HorseGuide;
+export default Atv;

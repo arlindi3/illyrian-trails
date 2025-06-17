@@ -29,17 +29,17 @@ import {
 
 import HotelSearch from "./pages/HotelsSearch";
 import SpeedBoat from "./pages/SpeedBoat";
-import MotorRental from "./pages/MotorRental";
 import FishingGuide from "./pages/FishingGuide";
 import HorseGuide from "./pages/HorseGuide";
 import PacketDetails from "./pages/PacketDetails";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Houses from "./pages/Houses";
 import CityGuide from "./pages/CityGuide";
-import HouseDetails from "./components/houses/HouseDetails";
+// import HouseDetails from "./components/houses/HouseDetails";
 import Layout from "./components/common/Layout";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import Atv from "./pages/Atv";
 
 function App() {
   // const [showButton, setShowButton] = useState(false);
@@ -85,14 +85,14 @@ function App() {
               </Layout>
             }
           />
-          <Route
+          {/* <Route
             path="/houses/:id"
             element={
               <Layout>
                 <HouseDetails />
               </Layout>
             }
-          />
+          /> */}
           <Route
             path="/city-guide"
             element={
@@ -118,10 +118,10 @@ function App() {
             }
           />
           <Route
-            path="/motors"
+            path="/atv"
             element={
               <Layout>
-                <MotorRental />
+                <Atv />
               </Layout>
             }
           />
@@ -187,7 +187,7 @@ function App() {
             }
           />
           <Route
-            path="/packet/:id/confirm-booking"
+            path="/:type/:id/confirm-booking"
             element={
               <Layout>
                 <ConfirmBooking />

@@ -32,7 +32,7 @@ export default function Contact() {
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
         <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white drop-shadow-lg">
-          Contact Our Tour Guide Team
+          Contact Our Tour Guide
         </h1>
       </div>
       <div className="flex-1 flex items-center justify-center">

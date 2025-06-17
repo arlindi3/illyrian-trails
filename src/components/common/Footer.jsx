@@ -18,7 +18,7 @@ const Footer = () => {
                 src={
                   mode === "dark"
                     ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                    : `${process.env.PUBLIC_URL}/logo-light.png`
+                    : `${process.env.PUBLIC_URL}/logo-albania.png`
                 }
                 alt="logo"
                 className="w-32 mb-3"

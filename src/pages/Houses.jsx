@@ -1,77 +1,111 @@
-// /houses/Houses.jsx
+import HouseBanner from "../banners/houseBanner.jpg";
+import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { houses } from "../components/houses/housesData";
-import HouseCard from "../components/houses/HouseCard";
-// import Banner from "../components/common/Banner";
-import House from "../banners/house1.jpg";
+import { housesData } from "../data/dummyData";
 import { Explore } from "../components/home";
 
 const Houses = () => {
   return (
-    <div className="flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-card-dark dark:to-gray-900">
+      {/* Banner */}
       <div className="relative h-[28rem] sm:h-[24rem] md:h-[28rem] flex items-center justify-center overflow-hidden mb-6 md:mb-8">
         <img
-          src={House}
-          alt="Find Your Perfect Stay"
-          className="absolute inset-0 w-full h-full object-cover opacity-0 animate-fadeIn brightness-75"
-          style={{ animation: "fadeIn 1.5s forwards" }}
+          src={HouseBanner}
+          alt="Houses Banner"
+          className="absolute inset-0 w-full h-full object-cover brightness-75"
         />
-        <div
-          className="pointer-events-none absolute left-0 right-0 bottom-0 h-16 sm:h-20 md:h-32"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(0,0,0,0) 0%, var(--tw-gradient-to, #000) 100%)",
-          }}
-        />
-        <div className="relative z-10 bg-white/80 dark:bg-gray-900/80 rounded-xl px-4 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 shadow-lg text-center w-[95%] max-w-2xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-blue-900 dark:text-white drop-shadow-lg tracking-tight">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/80" />
+        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-tight">
             Find Your Perfect Stay
           </h1>
-          <p className="mt-2 text-gray-700 dark:text-gray-200 text-base sm:text-lg">
-            Book your dream house in just a few clicks
+          <p className="mt-4 text-lg md:text-2xl text-white/90 font-medium max-w-2xl">
+            Discover the best houses and accommodations in Albania.
           </p>
         </div>
       </div>
-      <div className="mb-8 max-w-2xl mx-auto text-center">
-        <p className="text-lg sm:text-xl text-blue-800 dark:text-blue-200 font-medium">
-          Start your journey to the perfect getaway today!
-        </p>
-      </div>
-      <style>
-        {`
-          @keyframes fadeIn {
-            to { opacity: 1; }
-          }
-        `}
-      </style>
-      {/* Houses List */}
-      <div className="px-2 sm:px-4 md:px-12 max-w-6xl mx-auto w-full">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 dark:text-white text-center">
-          Available Houses
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {houses.map((house) => (
-            <Link key={house.id} to={`/houses/${house.id}`} className="group">
-              <HouseCard house={house} />
-              <button className="mt-2 sm:mt-3 w-full bg-blue-600 text-white py-2 rounded-lg font-semibold shadow group-hover:bg-blue-700 transition">
-                More Details
-              </button>
-            </Link>
-          ))}
+      <div className="mt-8 px-[3%] md:px-[10%]">
+        <div className="pt-10 pb-20">
+          <div className="text-center mb-10">
+            <h1 className="heading text-4xl md:text-5xl font-extrabold dark:text-white">
+              Book Your Dream House
+            </h1>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+              The most popular houses on Ilyiran Trails
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            {housesData.map(
+              ({
+                id,
+                type,
+                name,
+                rating,
+                image,
+                number_of_reviews,
+                price,
+                description,
+              }) => (
+                <div
+                  key={id}
+                  className="bg-white dark:bg-card-dark rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:scale-[1.02] transform transition-all"
+                >
+                  <div className="relative group">
+                    <img
+                      src={image}
+                      alt={name}
+                      className="w-full h-80 object-cover rounded-t-3xl group-hover:brightness-90 transition"
+                    />
+                    <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/80 px-4 py-1.5 rounded-full flex items-center gap-1 shadow text-base font-semibold">
+                      <FaStar className="text-secondaryYellow" />
+                      <span className="text-gray-900 dark:text-gray-100">
+                        {rating}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="p-4 flex flex-col flex-1 bg-white dark:bg-card-dark rounded-b-3xl">
+                    <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
+                      {name}
+                    </h2>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-gray-500 dark:text-gray-300 text-xs">
+                        {number_of_reviews} reviews
+                      </span>
+                    </div>
+                    <div className="flex items-end justify-between flex-1">
+                      <div>
+                        <span className="text-xl font-extrabold text-primary dark:text-secondary">
+                          €{price}
+                        </span>
+                        <span className="text-xs opacity-80 dark:text-gray-300 ml-1">
+                          /Night
+                        </span>
+                      </div>
+                      <Link
+                        to={`/${type}/${id}/confirm-booking`}
+                        className="btn btn-primary px-4 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-secondaryYellow hover:text-gray-900 transition-all duration-200 font-semibold text-sm"
+                      >
+                        Book Now
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              )
+            )}
+          </div>
         </div>
-        {/* Recommended Packages */}
-        <div className="mt-12 bg-white/90 dark:bg-gray-900/90 rounded-2xl shadow p-6 flex flex-col items-center">
-          <h3 className="text-xl font-bold mb-2 text-blue-800 dark:text-white">
-            Recommended Packages
-          </h3>
-          <p className="mb-4 text-gray-600 dark:text-gray-300 text-center">
-            Discover curated deals with amenities and local experiences for a
-            memorable trip.
+        <div className="mt-16 rounded-2xl shadow-xl p-8 flex flex-col items-center bg-gradient-to-br from-blue-100 via-white to-blue-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800">
+          <h2 className="text-3xl font-bold mb-3 text-blue-800 dark:text-white">
+            You may also be interested in
+          </h2>
+          <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
+            Explore our exclusive packages for a complete and comfortable stay.
+            Choose from curated deals that include amenities, local experiences,
+            and more to make your trip memorable.
           </p>
-        </div>
-        {/* Explore Section */}
-        <div className="w-full mt-10">
-          <Explore />
+          <div className="w-full">
+            <Explore />
+          </div>
         </div>
       </div>
     </div>

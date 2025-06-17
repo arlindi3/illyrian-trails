@@ -12,13 +12,15 @@ const MobileMenu = () => {
   return (
     <>
       {/* Hamburger Button */}
-      <button
-        onClick={() => setMenuOpen(true)}
-        className="md:hidden text-2xl p-2 focus:outline-none relative z-50 text-gray-800 dark:text-white"
-        aria-label="Open Menu"
-      >
-        <FiMenu />
-      </button>
+      {!menuOpen && (
+        <button
+          onClick={() => setMenuOpen(true)}
+          className="md:hidden text-2xl p-2 focus:outline-none relative z-50 text-gray-800 dark:text-white"
+          aria-label="Open Menu"
+        >
+          <FiMenu />
+        </button>
+      )}
 
       {/* Animated Fullscreen Menu from Left */}
       <AnimatePresence>
@@ -124,7 +126,7 @@ const MobileMenu = () => {
 
               {/* About */}
               <MenuItem
-                icon={<AiOutlineInfoCircle />} // Changed icon to FiMap for About
+                icon={<AiOutlineInfoCircle />}
                 label="About"
                 to="/about"
                 setMenuOpen={setMenuOpen}
