@@ -17,16 +17,16 @@ const Footer = () => {
               <img
                 src={
                   mode === "dark"
-                    ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                    : `${process.env.PUBLIC_URL}/logo-albania.png`
+                    ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                    : `${process.env.PUBLIC_URL}/logo-light-bg.png`
                 }
                 alt="logo"
                 className="w-32 mb-3"
               />
             </Link>
             <p className="text-sm text-muted">
-              Discover your next adventure with TripGuide. Explore, book, and
-              travel with ease.
+              Discover your next adventure with Ilyrian Trails. Explore, book,
+              and travel with ease.
             </p>
           </div>
 

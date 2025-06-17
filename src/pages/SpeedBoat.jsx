@@ -1,4 +1,4 @@
-import SpeedBoad from "../banners/speedboat.jpg";
+import SpeedBoad from "../banners/quckSilver.jpg";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { speedBoatData } from "../data/dummyData";
@@ -79,7 +79,7 @@ const SpeedBoat = () => {
                           €{price}
                         </span>
                         <span className="text-xs opacity-80 dark:text-gray-300 ml-1">
-                          /Tour
+                          /hour
                         </span>
                       </div>
                       <Link
@@ -100,9 +100,9 @@ const SpeedBoat = () => {
             You may also be interested in
           </h2>
           <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
-            Explore our exclusive speed boat packages for an unforgettable
-            adventure. Choose from curated tours that include hidden beaches,
-            local guides, and more to make your trip truly special.
+            Explore our exclusive packages for a complete and comfortable stay.
+            Choose from curated deals that include amenities, local experiences,
+            and more to make your trip memorable.
           </p>
           <div className="w-full">
             <Explore />

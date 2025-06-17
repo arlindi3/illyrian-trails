@@ -17,7 +17,7 @@ const CarRental = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/80" />
         <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg tracking-tight">
-            Car Rental Adventures
+            Car Rental
           </h1>
           <p className="mt-4 text-lg md:text-2xl text-white/90 font-medium max-w-2xl">
             Discover Albania at your own pace with our top-rated car rental
@@ -100,9 +100,9 @@ const CarRental = () => {
             You may also be interested in
           </h2>
           <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
-            Explore our exclusive speed boat packages for an unforgettable
-            adventure. Choose from curated tours that include hidden beaches,
-            local guides, and more to make your trip truly special.
+            Explore our exclusive packages for a complete and comfortable stay.
+            Choose from curated deals that include amenities, local experiences,
+            and more to make your trip memorable.
           </p>
           <div className="w-full">
             <Explore />

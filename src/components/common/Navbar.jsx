@@ -64,8 +64,8 @@ const Navbar = () => {
             <img
               src={
                 mode === "dark"
-                  ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                  : `${process.env.PUBLIC_URL}/logo-albania.png`
+                  ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                  : `${process.env.PUBLIC_URL}/logo-light-bg.png`
               }
               alt="logo"
               className="w-[5rem]"
@@ -76,8 +76,8 @@ const Navbar = () => {
             <img
               src={
                 mode === "dark"
-                  ? `${process.env.PUBLIC_URL}/logo-dark.png`
-                  : `${process.env.PUBLIC_URL}/logo-albania.png`
+                  ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                  : `${process.env.PUBLIC_URL}/logo-light-bg.png`
               }
               alt="logo"
               className="w-16" // Increased size for mobile

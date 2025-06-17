@@ -70,14 +70,20 @@ const Explore = () => {
       >
         {packagesData.map((packet) => (
           <Link
-            to={`/packets/${packet.id}`}
+            to={`/${packet.type}/${packet.id}/confirm-booking`}
             key={packet.id}
             className="min-w-[260px] max-w-xs"
           >
             <div className="bg-white dark:bg-gray-900 rounded-xl shadow p-4 flex flex-col h-full border border-gray-100 dark:border-gray-700 hover:border-primary transition">
               <img
-                src={packet.images[0]}
-                alt={packet.title}
+                src={
+                  packet.gallery && packet.gallery.length > 0
+                    ? packet.gallery[0]
+                    : packet.images && packet.images.length > 0
+                    ? packet.images[0]
+                    : "/default-image.jpg"
+                }
+                alt={packet.name || packet.title}
                 className="w-full h-40 object-cover rounded-lg mb-3"
               />
               <div className="flex items-center gap-x-2 mb-2">

@@ -5,8 +5,9 @@ import {
   housesData,
   speedBoatData,
   fishingGuides,
-  horseGuides,
+  atvGuides,
   carRentals,
+  horsebackGuides,
 } from "../data/dummyData";
 import { useState } from "react";
 
@@ -19,8 +20,9 @@ const ConfirmBooking = () => {
     ...(housesData || []),
     ...(speedBoatData || []),
     ...(fishingGuides || []),
-    ...(horseGuides || []),
     ...(carRentals || []),
+    ...(atvGuides || []),
+    ...(horsebackGuides || []),
   ];
 
   const service = allServices.find(

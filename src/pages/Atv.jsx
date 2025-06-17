@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { atvGuides } from "../data/dummyData";
-import MotorBanner from "../banners/EAHORA M1P PLUS― the most popular electric….jpg";
+import AtvBanner from "../banners/atvBanner.jpg";
 import { Explore } from "../components/home";
 
 const Atv = () => {
@@ -10,7 +10,7 @@ const Atv = () => {
       {/* Banner */}
       <div className="relative h-[28rem] sm:h-[24rem] md:h-[28rem] flex items-center justify-center overflow-hidden mb-6 md:mb-8">
         <img
-          src={MotorBanner}
+          src={AtvBanner}
           alt="ATV Banner"
           className="absolute inset-0 w-full h-full object-cover brightness-75"
         />
@@ -100,9 +100,9 @@ const Atv = () => {
             You may also be interested in
           </h2>
           <p className="mb-8 text-gray-600 dark:text-gray-300 max-w-2xl text-center">
-            Explore our exclusive speed boat packages for an unforgettable
-            adventure. Choose from curated tours that include hidden beaches,
-            local guides, and more to make your trip truly special.
+            Explore our exclusive packages for a complete and comfortable stay.
+            Choose from curated deals that include amenities, local experiences,
+            and more to make your trip memorable.
           </p>
           <div className="w-full">
             <Explore />

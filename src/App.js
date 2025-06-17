@@ -18,10 +18,8 @@ import {
   CarsSearch,
   ConfirmBooking,
   Home,
-  // PacketDetails,
   Login,
   PageNotFound,
-  // Profile,
   Register,
   Rewards,
   Wallet,
@@ -35,14 +33,12 @@ import PacketDetails from "./pages/PacketDetails";
 import WhatsAppButton from "./components/common/WhatsAppButton";
 import Houses from "./pages/Houses";
 import CityGuide from "./pages/CityGuide";
-// import HouseDetails from "./components/houses/HouseDetails";
 import Layout from "./components/common/Layout";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Atv from "./pages/Atv";
 
 function App() {
-  // const [showButton, setShowButton] = useState(false);
   const [showLoader, setShowLoader] = useState(false);
   const dispatch = useDispatch();
   const location = useLocation();
