@@ -1,7 +1,4 @@
 import { useRef, useState } from "react";
-// import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-// import { FaStar } from "react-icons/fa";
-// import { BiBed, BiMap } from "react-icons/bi";
 import { packagesData } from "../../data/dummyData";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";

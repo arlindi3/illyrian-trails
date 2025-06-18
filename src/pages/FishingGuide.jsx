@@ -31,7 +31,7 @@ const FishingGuide = () => {
               Book Your Dream Fishing Tour
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              The most popular fishing tours on Ilyrian Trails
+              The most popular fishing tours on Illyrian Trails
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
@@ -78,7 +78,7 @@ const FishingGuide = () => {
                           €{price}
                         </span>
                         <span className="text-xs opacity-80 dark:text-gray-300 ml-1">
-                          /Tour
+                          /hour
                         </span>
                       </div>
                       <Link

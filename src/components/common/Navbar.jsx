@@ -64,7 +64,7 @@ const Navbar = () => {
             <img
               src={
                 mode === "dark"
-                  ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                  ? `${process.env.PUBLIC_URL}/2-rb.png`
                   : `${process.env.PUBLIC_URL}/logo-light-bg.png`
               }
               alt="logo"
@@ -76,7 +76,7 @@ const Navbar = () => {
             <img
               src={
                 mode === "dark"
-                  ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                  ? `${process.env.PUBLIC_URL}/2-rb.png`
                   : `${process.env.PUBLIC_URL}/logo-light-bg.png`
               }
               alt="logo"
@@ -87,7 +87,7 @@ const Navbar = () => {
             to="/"
             className="text-xl font-semibold text-gray-800 dark:text-white "
           >
-            {/* Ilyrian Trails */}
+            {/* Illyrian Trails */}
           </Link>
         </div>
 

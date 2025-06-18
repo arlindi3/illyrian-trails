@@ -17,12 +17,12 @@ const navItems = [
     icon: <GiSpeedBoat size={24} />,
   },
   { to: "/cars", label: "Car Rental", icon: <BiCar size={24} /> },
-  { to: "/atv", label: "Atv Guide", icon: <FaMotorcycle size={24} /> },
   {
     to: "/fishing-guide",
     label: "Fishing Guide",
     icon: <GiFishing size={24} />,
   },
+  { to: "/atv", label: "Atv Guide", icon: <FaMotorcycle size={24} /> },
   {
     to: "/horseback-riding",
     label: "Horse Guide",

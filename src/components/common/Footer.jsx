@@ -17,7 +17,7 @@ const Footer = () => {
               <img
                 src={
                   mode === "dark"
-                    ? `${process.env.PUBLIC_URL}/logo-dark-bg.png`
+                    ? `${process.env.PUBLIC_URL}/2-rb.png`
                     : `${process.env.PUBLIC_URL}/logo-light-bg.png`
                 }
                 alt="logo"
@@ -25,7 +25,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-sm text-muted">
-              Discover your next adventure with Ilyrian Trails. Explore, book,
+              Discover your next adventure with Illyrian Trails. Explore, book,
               and travel with ease.
             </p>
           </div>

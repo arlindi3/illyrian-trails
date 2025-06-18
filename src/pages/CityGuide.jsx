@@ -35,7 +35,7 @@ const CityGuide = () => {
               Book Your Guide on the Best Cities in Albania
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              The most searched for cities on TipGuide
+              The most searched for cities on Illyrian Trails
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">

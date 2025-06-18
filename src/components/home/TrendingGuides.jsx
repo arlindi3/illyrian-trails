@@ -10,7 +10,7 @@ const TrendingGuides = () => {
           Popular Guides
         </h1>
         <p className="mt-3 text-gray-600 dark:text-gray-300 text-lg max-w-xl mx-auto">
-          Discover the most popular destinations and guides on Ilyrian Trails.
+          Discover the most popular destinations and guides on Illyrian Trails.
         </p>
       </div>
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
