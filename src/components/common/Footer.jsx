@@ -39,7 +39,7 @@ const Footer = () => {
                 <a href="#">Travel Booking</a>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Flight Booking</a>
+                <a href="#">Speed Boat Tours</a>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
                 <a href="#">Car Booking</a>
@@ -83,7 +83,7 @@ const Footer = () => {
                 <a href="#">Success</a>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">About TripGuide</a>
+                <a href="#">About Illyrian Trails</a>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
                 <a href="#">Blog</a>

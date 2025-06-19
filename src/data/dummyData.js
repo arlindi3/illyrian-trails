@@ -270,9 +270,9 @@ export const horseGuides = [
 ];
 export const speedBoatData = [
   {
-    id: "boat1",
+    id: 1,
     type: "boat",
-    name: "QuickSilver 805 Tour with 2 Motors",
+    name: "QuickSilver 805 Tour Twin Motors",
     location: "Durrës Marina",
     description:
       "Enjoy a premium speedboat experience on the QuickSilver 805 with twin motors. Perfect for groups seeking comfort, speed, and unforgettable views along the coast.",
@@ -285,7 +285,7 @@ export const speedBoatData = [
     // video: `${process.env.PUBLIC_URL}/videos/quicksilver-805.mp4`,
     price: "200",
     price_1_4_persons: "200",
-    price_5_8_persons: "250",
+    price_5_8_persons: "300",
     rating: 4.9,
     number_of_reviews: 110,
     duration: "by agreement",
@@ -447,7 +447,7 @@ export const packagesData = [
     notIncluded: ["Lunch", "Binoculars", "Snacks"],
   },
   {
-    id: "boat1",
+    id: 1,
     type: "boat",
     title: "QuickSilver 805 Tour with 2 Motors",
     name: "QuickSilver 805 Tour with 2 Motors",
@@ -512,7 +512,7 @@ export const packagesData = [
     notIncluded: ["Snacks", "Hiking shoes", "Water bottles"],
   },
   {
-    id: "5",
+    id: 1,
     title: "Horse Riding Guide",
     location: "Sektor Rinia",
     images: [
@@ -575,7 +575,7 @@ export const tourPackages = [
     description:
       "Discover one of Albania’s most mesmerizing natural wonders – The Blue Eye (Syri i Kaltër). This day trip offers a unique chance to explore a crystal-clear spring nestled in a lush protected area. You’ll enjoy a peaceful walk through nature, admire the surreal blue depths of the spring, and learn about the local biodiversity. The experience continues with a relaxing time and also trying to dive in the Blue Eye , followed by a farm-to-table lunch in a nearby village known for its organic cuisine. Ideal for nature lovers, photographers, and curious travelers alike.",
     itinerary: [
-      { time: "06:30", activity: "Departure from Durrës" },
+      { time: "06:30", activity: "Departure from Durrës or Tirana" },
       { time: "10:30", activity: "Arrival at Blue Eye Natural Park" },
       { time: "11:00", activity: "Walk around the spring and protected area" },
       { time: "12:30", activity: "Free time to explore or relax" },
@@ -583,8 +583,8 @@ export const tourPackages = [
         time: "13:30",
         activity: "Lunch in a nearby village with organic products (optional)",
       },
-      { time: "15:30", activity: "Return trip to Durrës" },
-      { time: "19:30", activity: "Arrival back in Durrës" },
+      { time: "15:30", activity: "Return trip to Durrës or Tirana" },
+      { time: "19:30", activity: "Arrival back in Durrës or Tirana" },
     ],
     included: [
       "Round trip transportation",
@@ -616,7 +616,10 @@ export const tourPackages = [
     description:
       "Step into adventure with this unforgettable day trip to Pellumbas Cave and the Erzeni Canyon, two of Albania's hidden gems. Begin your day with a scenic hike to one of the few caves in Europe that has been inhabited since the Paleolithic era. Equipped with helmets and headlamps, you’ll explore the cave’s impressive stalactites and mysterious chambers. After your caving experience, continue on to the majestic Erzeni Canyon, a natural oasis ideal for a picnic, wild swimming, and unwinding in crystal-clear waters surrounded by dramatic rock formations. This tour combines light adventure, history, and natural beauty—perfect for hikers, explorers, and nature lovers.",
     itinerary: [
-      { time: "08:00", activity: " Departure from Durrës to Pellumbas" },
+      {
+        time: "08:00",
+        activity: " Departure from Durrës or Tirana to Pellumbas",
+      },
       { time: "09:15", activity: "Hike toward the cave (1.2 km trail)" },
       {
         time: "10:00",
@@ -628,8 +631,8 @@ export const tourPackages = [
         time: "14:30",
         activity: "Free time: swimming and relaxing in natural waters",
       },
-      { time: "16:00", activity: "Return to Durrës" },
-      { time: "17:30", activity: "Arrival back in Durrës" },
+      { time: "16:00", activity: "Return to Durrës or Tirana" },
+      { time: "17:30", activity: "Arrival back in Durrës or Tirana" },
     ],
     included: ["Walking guide", "Transportation to Zvernec", "Entrance fees"],
     notIncluded: ["Lunch", "Tips", "Personal shopping"],
@@ -701,7 +704,7 @@ export const tourPackages = [
     description:
       "Travel back in time with a full-day cultural journey to Apollonia, one of Albania’s most significant archaeological sites. Once a thriving city of the ancient Greek and Roman world, Apollonia offers visitors a stunning glimpse into classical architecture and life. Explore the odeon, forum, and colonnaded streets surrounded by olive groves, then visit the Archaeological Museum, housed within a beautiful Byzantine monastery. After immersing in history, enjoy a traditional lunch in the countryside, where local flavors complement the ancient landscape. This tour is perfect for culture seekers, history lovers, and anyone curious about Albania’s classical past.",
     itinerary: [
-      { time: "08:00", activity: "Departure from Durrës" },
+      { time: "08:00", activity: "Departure from Durrës or Tirana" },
       { time: "10:00", activity: "Arrival at Apollonia" },
       {
         time: "10:15",
@@ -717,8 +720,8 @@ export const tourPackages = [
         activity: "Traditional lunch in a nearby village (optional)",
       },
       { time: "14:30", activity: "Free time for rest and photography" },
-      { time: "15:30", activity: "Return to Durrës" },
-      { time: "17:00", activity: "Arrival back in Durrës" },
+      { time: "15:30", activity: "Return to Durrës or Tirana" },
+      { time: "17:00", activity: "Arrival back in Durrës or Tirana" },
     ],
     included: ["Transport", "Entrance ticket", "Tour guide"],
     notIncluded: ["Food & beverages", "Optional souvenirs"],
@@ -746,7 +749,7 @@ export const tourPackages = [
     description:
       "This tour takes you to the heart of Albanian history and national pride — Kruja, the city of Skanderbeg. Set atop a scenic mountain ridge, Kruja offers breathtaking views and rich cultural heritage. You'll begin your day with a guided visit to the iconic Kruja Castle, followed by the Skanderbeg Museum, dedicated to Albania's national hero, and the Ethnographic Museum, which showcases traditional life in the region. Stroll through the charming Old Bazaar, filled with handmade crafts and local treasures, before enjoying a traditional mountain-style lunch with stunning views of the surrounding landscape. This tour is ideal for travelers interested in history, culture, and Albanian identity.",
     itinerary: [
-      { time: "09:00 ", activity: "Departure from Durrës" },
+      { time: "09:00 ", activity: "Departure from Durrës or Tirana" },
       { time: "10:00", activity: "Visit to Kruja Castle" },
       {
         time: "10:45",
@@ -759,9 +762,9 @@ export const tourPackages = [
         activity: "Traditional mountain lunch with a panoramic view",
       },
       { time: "15:30", activity: "Coffee break" },
-      { time: "16:00 ", activity: "Return to Durrës" },
-      { time: "16:00 ", activity: "Return to Durrës" },
-      { time: "17:00 ", activity: "Arrival back to Durrës" },
+      { time: "16:00 ", activity: "Return to Durrës or Tirana" },
+      { time: "16:00 ", activity: "Return to Durrës or Tirana" },
+      { time: "17:00 ", activity: "Arrival back to Durrës or Tirana" },
     ],
     included: ["Transport", "Local guide", "Entrance fees"],
     notIncluded: ["Lunch", "Drinks", "Insurance"],
@@ -789,7 +792,10 @@ export const tourPackages = [
     description:
       "Step into one of Albania’s most breathtaking natural landscapes — the Shala River, often called “the Albanian Thailand” for its turquoise waters and wild beauty. This full-day adventure begins with an exciting 4x4 ride through the northern terrain, followed by a scenic hike to the Sharrë Waterfall, where untouched nature meets refreshing mountain springs. Take time to swim in the crystal-clear waters, explore hidden trails, and relax during a picnic lunch surrounded by forested hills. Ideal for nature lovers and adventurers, this tour combines adrenaline, serenity, and raw Albanian wilderness in one unforgettable day.",
     itinerary: [
-      { time: "07:30", activity: "Departure from Durrës in off-road vehicles" },
+      {
+        time: "07:30",
+        activity: "Departure from Durrës or Tirana in off-road vehicles",
+      },
       { time: "10:00", activity: "Start of the hike toward Sharrë Waterfall" },
       {
         time: "11:30",
@@ -797,7 +803,7 @@ export const tourPackages = [
       },
       { time: "13:30", activity: "Picnic in nature" },
       { time: "15:30", activity: "Time for photos and relaxation" },
-      { time: "16:00 ", activity: "Return to Durrës" },
+      { time: "16:00 ", activity: "Return to Durrës or Tirana" },
       { time: "18:30  ", activity: "Arrival" },
     ],
     included: ["Transport", "Boat ride", "Guide"],
@@ -826,7 +832,10 @@ export const tourPackages = [
     description:
       "This day trip to Theth’s Blue Eye is an unforgettable journey into the heart of the Albanian Alps. Hidden deep in the mountains, the Blue Eye is a dazzling natural spring with crystal-clear turquoise water emerging from underground rocks. Surrounded by forest and fed by glacial streams, it’s a refreshing and spiritual destination for hikers and explorers alike. Our adventure begins early from the coast and takes you through some of Albania’s most spectacular landscapes via off-road vehicles and guided hiking paths.",
     itinerary: [
-      { time: "05:00", activity: "Departure from Durrës by 4x4 vehicles" },
+      {
+        time: "05:00",
+        activity: "Departure from Durrës or Tirana by 4x4 vehicles",
+      },
       {
         time: "09:30",
         activity: "Arrival in Theth National Park (coffee break)",
@@ -842,8 +851,8 @@ export const tourPackages = [
         time: "16:30",
         activity: "Optional visit to Theth Waterfall or Lock-in Tower",
       },
-      { time: "17:30", activity: "Departure back to Durrës" },
-      { time: "22:00", activity: "Arrival in Durrës" },
+      { time: "17:30", activity: "Departure back to Durrës or Tirana" },
+      { time: "22:00", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["4x4 Transport", "Hiking Guide", "Entry Fees", "Picnic Lunch"],
     notIncluded: ["Snacks", "Hiking shoes", "Water bottles", "Towels"],
@@ -871,14 +880,14 @@ export const tourPackages = [
     description:
       "Escape into nature with this day trip to Lake Bovilla — one of Albania’s most beautiful hidden gems just outside Tirana. Surrounded by dramatic cliffs and green hills, the lake is ideal for hiking, photography, and panoramic views. The tour includes a guided walk along the canyon ridge and time to relax by the lake or climb toward the panoramic viewpoint for breathtaking scenery. Ideal for light adventure and nature lovers.",
     itinerary: [
-      { time: "08:00", activity: "Departure from Durrës" },
+      { time: "08:00", activity: "Departure from Durrës or Tirana" },
       { time: "09:30", activity: "Arrival at Bovilla Dam" },
       { time: "10:00", activity: "Guided hike along the canyon trail" },
       { time: "11:30", activity: "Break at the panoramic viewpoint" },
       { time: "12:30", activity: "Picnic lunch by the lake (not included)" },
       { time: "14:00", activity: "Relaxation and free time by the water" },
-      { time: "15:30", activity: "Departure back to Durrës" },
-      { time: "17:00", activity: "Arrival in Durrës" },
+      { time: "15:30", activity: "Departure back to Durrës or Tirana" },
+      { time: "17:00", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Guide", "Entrance fees"],
     notIncluded: ["Snacks", "Hiking shoes", "Water bottles"],
@@ -906,7 +915,7 @@ export const tourPackages = [
     description:
       "Discover the rich biodiversity of Albania’s largest lagoon – Karavasta. This day tour to Divjakë includes an exciting boat ride to spot flamingos and pelicans, a coffee break at a panoramic tower, and a nature walk in the protected area. With a mix of wildlife observation, forest trails, and traditional food, this trip offers the perfect escape into nature.",
     itinerary: [
-      { time: "07:30", activity: "Departure from Durrës" },
+      { time: "07:30", activity: "Departure from Durrës or Tirana" },
       { time: "09:00", activity: "Arrival at Divjakë National Park" },
       { time: "09:30", activity: "Panoramic view from the 360° Tower" },
       {
@@ -917,8 +926,8 @@ export const tourPackages = [
       { time: "12:00", activity: "Walk through pine forest trails" },
       { time: "13:30", activity: "Traditional lunch at a local eco-resort" },
       { time: "15:00", activity: "Relaxation" },
-      { time: "16:30", activity: "Departure back to Durrës" },
-      { time: "18:00", activity: "Arrival in Durrës" },
+      { time: "16:30", activity: "Departure back to Durrës or Tirana" },
+      { time: "18:00", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Boat ride", "Park entrance", "Guide"],
     notIncluded: ["Lunch", "Binoculars", "Snacks"],
@@ -946,7 +955,7 @@ export const tourPackages = [
     description:
       "Escape to the peaceful shores of Lake Ohrid in Pogradec, where natural beauty meets cultural charm. This day trip includes lakeside walks, a visit to the famous Drilon Park, exploration of local villages, and a traditional lunch with fresh fish. Ideal for those who seek a calm, scenic, and culturally rich experience in southeastern Albania.",
     itinerary: [
-      { time: "07:30", activity: "Departure from Durrës" },
+      { time: "07:30", activity: "Departure from Durrës or Tirana" },
       {
         time: "10:30",
         activity: "Arrival in Pogradec and lake promenade walk",
@@ -961,8 +970,8 @@ export const tourPackages = [
         time: "15:00",
         activity: "Free time for relaxation or exploring the old bazaar",
       },
-      { time: "16:30", activity: "Departure to Durrës" },
-      { time: "19:30", activity: "Arrival in Durrës" },
+      { time: "16:30", activity: "Departure to Durrës or Tirana" },
+      { time: "19:30", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Guide", "Entrance to Drilon Park"],
     notIncluded: ["Lunch", "Boat ride", "Personal expenses"],
@@ -990,7 +999,7 @@ export const tourPackages = [
     description:
       "Dive into the cultural capital of southeastern Albania – Korçë. Known for its cobblestone streets, museums, and traditional food, this tour offers a blend of history, art, and authentic Albanian charm. Stroll through the old bazaar, admire Orthodox cathedrals, and enjoy a rich lunch in one of the city’s atmospheric taverns.",
     itinerary: [
-      { time: "07:00", activity: "Departure from Durrës" },
+      { time: "07:00", activity: "Departure from Durrës or Tirana" },
       {
         time: "10:30",
         activity: "Arrival in Korçë and walking tour of the Old Bazaar",
@@ -1009,8 +1018,8 @@ export const tourPackages = [
         activity: "Coffee break and local pastry tasting (optional)",
       },
       { time: "15:45", activity: "Free time to explore or buy souvenirs" },
-      { time: "16:30", activity: "Departure to Durrës" },
-      { time: "20:00", activity: "Arrival in Durrës" },
+      { time: "16:30", activity: "Departure to Durrës or Tirana" },
+      { time: "20:00", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Guide", "Museum entrance ticket"],
     notIncluded: ["Lunch", "Drinks", "Personal expenses"],
@@ -1038,7 +1047,7 @@ export const tourPackages = [
     description:
       "Discover the peaceful alpine village of Voskopoja, once a thriving cultural hub in the Balkans. Nestled in the mountains near Korçë, this day trip offers scenic nature, centuries-old Orthodox churches, and traditional architecture. Perfect for travelers seeking tranquility, history, and authentic Albanian hospitality.",
     itinerary: [
-      { time: "07:00", activity: "Departure from Durrës" },
+      { time: "07:00", activity: "Departure from Durrës or Tirana" },
       { time: "10:30", activity: "Arrival in Voskopoja and welcome coffee" },
       {
         time: "11:00",
@@ -1054,8 +1063,8 @@ export const tourPackages = [
         time: "14:30",
         activity: "Free time for hiking, photo stops, or relaxing in nature",
       },
-      { time: "16:00", activity: "Departure to Durrës" },
-      { time: "19:30", activity: "Arrival in Durrës" },
+      { time: "16:00", activity: "Departure to Durrës or Tirana" },
+      { time: "19:30", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Guide", "Church entrance fees"],
     notIncluded: ["Lunch", "Drinks", "Souvenirs"],
@@ -1083,7 +1092,7 @@ export const tourPackages = [
     description:
       "Visit one of Albania’s most iconic UNESCO World Heritage sites – Berat. Known as the ‘City of a Thousand Windows’, Berat offers a stunning blend of Ottoman architecture, medieval castles, and hilltop churches. This day trip is perfect for history lovers and photographers alike.",
     itinerary: [
-      { time: "08:00", activity: "Departure from Durrës" },
+      { time: "08:00", activity: "Departure from Durrës or Tirana" },
       { time: "10:30", activity: "Arrival in Berat and short coffee break" },
       {
         time: "11:00",
@@ -1095,8 +1104,8 @@ export const tourPackages = [
       },
       { time: "13:30", activity: "Traditional lunch with local dishes" },
       { time: "15:00", activity: "Free time for shopping or riverside walk" },
-      { time: "16:00", activity: "Departure to Durrës" },
-      { time: "18:30", activity: "Arrival in Durrës" },
+      { time: "16:00", activity: "Departure to Durrës or Tirana" },
+      { time: "18:30", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Guide", "Entrance to Castle and Museum"],
     notIncluded: ["Lunch", "Drinks", "Personal purchases"],
@@ -1124,7 +1133,7 @@ export const tourPackages = [
     description:
       "Step back in time with a day trip to Gjirokastër, the UNESCO World Heritage site known as the ‘Stone City’. Wander through cobblestone alleys, admire Ottoman-era houses, visit the mighty castle and explore the traditional bazaar. This is a perfect tour for culture lovers, history enthusiasts, and those who appreciate architecture and authentic Albanian lifestyle.",
     itinerary: [
-      { time: "06:30", activity: "Departure from Durrës" },
+      { time: "06:30", activity: "Departure from Durrës or Tirana" },
       { time: "10:30", activity: "Arrival in Gjirokastër and welcome coffee" },
       {
         time: "11:00",
@@ -1139,8 +1148,8 @@ export const tourPackages = [
         time: "15:00",
         activity: "Free time for exploring or visiting the Ethnographic Museum",
       },
-      { time: "16:30", activity: "Departure to Durrës" },
-      { time: "20:00", activity: "Arrival in Durrës" },
+      { time: "16:30", activity: "Departure to Durrës or Tirana" },
+      { time: "20:00", activity: "Arrival in Durrës or Tirana" },
     ],
     included: ["Transport", "Castle entrance", "Guide"],
     notIncluded: ["Lunch", "Personal purchases", "Optional museum tickets"],
@@ -1174,7 +1183,7 @@ export const travelPassions = [
     name: "4-Wheeler Motorcycle Guide",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
+    image: `${process.env.PUBLIC_URL}/images/atv/motorra-4goma.jpeg`,
   },
 ];
 

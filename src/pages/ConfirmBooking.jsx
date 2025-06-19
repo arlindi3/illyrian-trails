@@ -161,14 +161,18 @@ const ConfirmBooking = () => {
   }
 
   // Custom layout for speedboats (already present below)
-  if (service.type === "speedboat") {
-    // Assume service.price_1_4 and service.price_5_8_persons are the prices for 1-4 and 5-8 persons
+  if (service.type === "boat" || service.type === "fishing") {
     return (
       <div className="min-h-screen pt-24 px-4 md:px-10 pb-16 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
-              src={selectedImg || service.image}
+              src={
+                selectedImg ||
+                (service.gallery && service.gallery.length > 0
+                  ? service.gallery[0]
+                  : service.image)
+              }
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-gray-200 dark:border-gray-700"
             />
@@ -179,19 +183,31 @@ const ConfirmBooking = () => {
                   <FaMapMarkerAlt className="text-2xl" />
                   <span>{service.location}</span>
                 </div>
-                <div className="mb-4">
-                  <span className="font-semibold text-lg">
-                    €{service.price_1_4 || service.price}
-                  </span>{" "}
-                  <span className="text-xs">/1-4 persons</span>
+                <div className="mb-4 flex flex-col gap-1">
+                  {/* Show group prices if available */}
+                  {service.price_1_4_persons && (
+                    <div>
+                      <span className="font-semibold text-lg">
+                        €{service.price_1_4_persons}
+                      </span>{" "}
+                      <span className="text-xs">/1-4 persons</span>
+                    </div>
+                  )}
                   {service.price_5_8_persons && (
-                    <>
-                      <span className="mx-2">|</span>
+                    <div>
                       <span className="font-semibold text-lg">
                         €{service.price_5_8_persons}
                       </span>{" "}
                       <span className="text-xs">/5-8 persons</span>
-                    </>
+                    </div>
+                  )}
+                  {/* Fallback to single price */}
+                  {!service.price_1_4_persons && service.price && (
+                    <div>
+                      <span className="font-semibold text-lg">
+                        €{service.price}
+                      </span>
+                    </div>
                   )}
                 </div>
                 <p className="text-lg">{service.description}</p>
@@ -215,7 +231,7 @@ const ConfirmBooking = () => {
                 className="mt-8 bg-primary hover:bg-primary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg transition-all"
                 onClick={handleBooking}
               >
-                Book Speed Boat on WhatsApp
+                Book Now on WhatsApp
               </button>
               <p className="mt-2 text-base">
                 You will be redirected to WhatsApp to complete your booking.
@@ -727,19 +743,20 @@ const ConfirmBooking = () => {
                   <FaMapMarkerAlt className="text-2xl" />
                   <span>{service.location}</span>
                 </div>
-                <div className="mb-4">
-                  <span className="font-semibold text-lg">
-                    €{service.price_1_4_persons || service.price}
-                  </span>{" "}
-                  <span className="text-xs">/1-4 persons</span>
+                <div className="mb-4 flex flex-col gap-1">
+                  <div>
+                    <span className="font-semibold text-lg">
+                      €{service.price_1_4_persons}
+                    </span>{" "}
+                    <span className="text-xs">/1-4 persons</span>
+                  </div>
                   {service.price_5_8_persons && (
-                    <>
-                      <span className="mx-2">|</span>
+                    <div>
                       <span className="font-semibold text-lg">
                         €{service.price_5_8_persons}
                       </span>{" "}
                       <span className="text-xs">/5-8 persons</span>
-                    </>
+                    </div>
                   )}
                 </div>
                 <p className="text-lg">{service.description}</p>
