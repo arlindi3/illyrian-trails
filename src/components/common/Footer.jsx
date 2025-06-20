@@ -36,19 +36,19 @@ const Footer = () => {
             </h2>
             <ul>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Travel Booking</a>
+                <Link to="/city-guide">Travel Booking</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Speed Boat Tours</a>
+                <Link to="/speedboat">Speed Boat Tours</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Car Booking</a>
+                <Link to="/cars">Car Booking</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Five-star Hotels</a>
+                <Link to="/houses">Stays</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Travelling</a>
+                <Link to="/fishing-guide">Fishing Guide</Link>
               </li>
             </ul>
           </div>
@@ -57,19 +57,19 @@ const Footer = () => {
             <h2 className="text-xl font-semibold mb-2 text-primary">Support</h2>
             <ul>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Account</a>
+                <Link to="/contact">Contact</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Legal</a>
+                <Link to="/#">Legal</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Contact</a>
+                <Link to="/#">Terms & Conditions</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Terms & Conditions</a>
+                <Link to="/#">Account</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Privacy Policy</a>
+                <Link to="/#">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -80,19 +80,19 @@ const Footer = () => {
             </h2>
             <ul>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Success</a>
+                <Link to="/#">Success</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">About Illyrian Trails</a>
+                <Link to="/about">About Illyrian Trails</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Blog</a>
+                <Link to="/#">Blog</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Information</a>
+                <Link to="/about">Information</Link>
               </li>
               <li className="my-2 text-muted hover:text-primary transition">
-                <a href="#">Travel Guide</a>
+                <Link to="/city-guide">Travel Guide</Link>
               </li>
             </ul>
           </div>
@@ -118,30 +118,30 @@ const Footer = () => {
               </button>
             </form>
             <div className="flex justify-center md:justify-start gap-4 mt-4">
-              <a
-                href="#"
+              <Link
+                to="/#"
                 className="text-xl text-muted hover:text-primary transition"
               >
                 <FiFacebook />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/#"
                 className="text-xl text-muted hover:text-primary transition"
               >
                 <FaTwitter />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="https://www.instagram.com/illyrian.trails/"
                 className="text-xl text-muted hover:text-primary transition"
               >
                 <FaInstagram />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/#"
                 className="text-xl text-muted hover:text-primary transition"
               >
                 <FaLinkedin />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

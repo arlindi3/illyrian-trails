@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { Routes, Route, useLocation } from "react-router-dom";
-
 // import BackToTopButton from "./components/common/BackToTopButton";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
@@ -50,6 +49,16 @@ function App() {
   //   window.addEventListener("scroll", handleScroll);
   //   return () => window.removeEventListener("scroll", handleScroll);
   // }, []);
+  function usePageTracking() {
+    const location = useLocation();
+
+    useEffect(() => {
+      window.gtag("config", "G-1N3FZNH5BB", {
+        page_path: location.pathname,
+      });
+    }, [location]);
+  }
+  usePageTracking();
 
   const handleCloseDropdown = () => {
     dispatch(closeDropdown());
