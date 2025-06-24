@@ -1,5 +1,5 @@
 import SpeedBoad from "../banners/quckSilver.jpg";
-import { FaStar } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { speedBoatData } from "../data/dummyData";
 import { Explore } from "../components/home";
@@ -57,22 +57,22 @@ const SpeedBoat = () => {
                       alt={name}
                       className="w-full h-80 object-cover rounded-t-3xl group-hover:brightness-90 transition"
                     />
-                    <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/80 px-4 py-1.5 rounded-full flex items-center gap-1 shadow text-base font-semibold">
+                    {/* <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/80 px-4 py-1.5 rounded-full flex items-center gap-1 shadow text-base font-semibold">
                       <FaStar className="text-secondaryYellow" />
                       <span className="text-gray-900 dark:text-gray-100">
                         {rating}
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="p-4 flex flex-col flex-1 bg-white dark:bg-card-dark rounded-b-3xl">
                     <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-1">
                       {name}
                     </h2>
-                    <div className="flex items-center gap-2 mb-2">
+                    {/* <div className="flex items-center gap-2 mb-2">
                       <span className="text-gray-500 dark:text-gray-300 text-xs">
                         {number_of_reviews} reviews
                       </span>
-                    </div>
+                    </div> */}
                     <div className="flex items-end justify-between flex-1">
                       <div>
                         <span className="text-xl font-extrabold text-primary dark:text-secondary">

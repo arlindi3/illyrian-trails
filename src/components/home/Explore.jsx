@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import { packagesData } from "../../data/dummyData";
 import { Link } from "react-router-dom";
-import { FaStar } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 const Explore = () => {
   const [isScroll, setIsscroll] = useState(false);
   const exploreContainer = useRef(null);
@@ -84,10 +84,10 @@ const Explore = () => {
                 className="w-full h-40 object-cover rounded-lg mb-3"
               />
               <div className="flex items-center gap-x-2 mb-2">
-                <FaStar className="text-yellow-400" />
+                {/* <FaStar className="text-yellow-400" />
                 <span className="text-gray-700 dark:text-gray-200 text-base font-semibold">
                   {packet.rating}
-                </span>
+                </span> */}
                 <span className="ml-auto text-xs text-gray-400">
                   {packet.location}
                 </span>

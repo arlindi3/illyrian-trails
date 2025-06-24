@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { FaStar, FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
+import { FaMapMarkerAlt, FaCheckCircle } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 import {
   tourPackages,
   housesData,
@@ -75,17 +76,17 @@ const ConfirmBooking = () => {
                   <FaMapMarkerAlt className="text-2xl" />
                   <span>{service.location}</span>
                 </div>
-                <div className="flex items-center gap-3 mb-4">
+                {/* <div className="flex items-center gap-3 mb-4">
                   {service.rating && <FaStar className="text-yellow-400" />}
                   {service.rating && (
                     <span className="font-bold">{service.rating}</span>
-                  )}
-                  {service.number_of_reviews && (
+                  )} */}
+                {/* {service.number_of_reviews && (
                     <span className="text-sm">
                       ({service.number_of_reviews} reviews)
                     </span>
-                  )}
-                </div>
+                  )} */}
+                {/* </div> */}
                 <div className="mb-4">
                   <span className="font-semibold text-lg">
                     €{service.price}
@@ -550,7 +551,7 @@ const ConfirmBooking = () => {
                 className="mt-8 bg-primary hover:bg-primary text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg transition-all"
                 onClick={handleBooking}
               >
-                Book Car Rental on WhatsApp
+                Book Car on WhatsApp
               </button>
               <p className="mt-2 text-base">
                 You will be redirected to WhatsApp to complete your booking.
@@ -859,7 +860,7 @@ const ConfirmBooking = () => {
               </div>
             )}
           </div>
-          {(service.rating || service.number_of_reviews) && (
+          {/* {(service.rating || service.number_of_reviews) && (
             <div className="flex items-center gap-3 bg-white dark:bg-gray-800 px-5 py-2 rounded-full shadow">
               {service.rating && (
                 <FaStar className="text-yellow-400 text-2xl" />
@@ -873,7 +874,7 @@ const ConfirmBooking = () => {
                 </span>
               )}
             </div>
-          )}
+          )} */}
         </div>
 
         {/* Main Image & Gallery */}

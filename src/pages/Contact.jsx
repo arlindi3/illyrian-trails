@@ -49,7 +49,7 @@ export default function Contact() {
               WhatsApp
             </a>
             <a
-              href="https://instagram.com/yourprofile"
+              href="https://www.instagram.com/illyrian.trails/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-600 transition flex items-center gap-2"

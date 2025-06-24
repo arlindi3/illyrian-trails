@@ -1,4 +1,4 @@
-import { FaStar } from "react-icons/fa";
+// import { FaStar } from "react-icons/fa";
 import { BiMap } from "react-icons/bi";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { useParams } from "react-router-dom";
@@ -35,8 +35,8 @@ const PacketDetails = () => {
           <div className="mt-2 flex items-center gap-3 text-sm text-gray-700">
             <BiMap />
             <span>{packet.location}</span>
-            <FaStar className="text-secondaryYellow" />
-            <span>{packet.rating}</span>
+            {/* <FaStar className="text-secondaryYellow" />
+            <span>{packet.rating}</span> */}
           </div>
           <div className="flex gap-2 mt-2">
             {packet.tags &&
