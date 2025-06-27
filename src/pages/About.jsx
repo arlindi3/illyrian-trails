@@ -11,11 +11,11 @@ const features = [
 const About = () => (
   <main className="w-full min-h-screen mx-auto my-0 p-8 bg-white rounded-none shadow-none font-sans text-gray-800">
     <h1 className="text-4xl font-bold mb-6 text-center tracking-wide drop-shadow-lg">
-      About Ilyrian Trails
+      About Illyrian Trails
     </h1>
     <img
       src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
-      alt="Ilyrian landscape"
+      alt="Illyrian landscape"
       className="w-full rounded-xl my-10 shadow-lg object-cover max-h-[350px]"
     />
     <section className="mb-8">

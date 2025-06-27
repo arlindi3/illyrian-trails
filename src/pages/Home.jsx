@@ -2,7 +2,7 @@ import React from "react";
 // import Banner from "../components/common/Banner";
 import NavFilters from "../components/common/NavFilters";
 // import HomeBanner from "../banners/banner.jpg";
-import HomeBanner from "../banners/saranda.jpg";
+import HomeBanner from "../banners/homebanner.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

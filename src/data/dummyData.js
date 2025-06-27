@@ -112,7 +112,7 @@ export const atvGuides = [
     duration: "3 hours",
     rating: "4.7",
     number_of_reviews: 38,
-    image: `${process.env.PUBLIC_URL}/images/atv/motorra-4goma.jpeg`,
+    image: `${process.env.PUBLIC_URL}/images/atv/atv.jpg`,
     description:
       "Experience the thrill of off-road adventure with a 4-wheeler ATV tour through the scenic trails of Durrës. Suitable for beginners and experienced riders. Safety gear included.",
   },
@@ -124,7 +124,7 @@ export const atvGuides = [
     duration: "3 hours",
     rating: "4.9",
     number_of_reviews: 21,
-    image: `${process.env.PUBLIC_URL}/images/safari.jpeg`,
+    image: `${process.env.PUBLIC_URL}/images/atv/safari.jpg`,
     description:
       "Join a guided safari car tour through the wild landscapes of Karavasta Lagoon. Spot wildlife, enjoy panoramic views, and learn about the local ecosystem from your expert guide.",
   },
@@ -545,7 +545,7 @@ export const packagesData = [
     rating: "4.7",
     number_of_reviews: 38,
     // images: `${process.env.PUBLIC_URL}/images/motorra-4goma.jpeg`,
-    images: [`${process.env.PUBLIC_URL}/images/atv/motorra-4goma.jpeg`],
+    images: [`${process.env.PUBLIC_URL}/images/atv/atv.jpg`],
     description:
       "Experience the thrill of off-road adventure with a 4-wheeler ATV tour through the scenic trails of Durrës. Suitable for beginners and experienced riders. Safety gear included.",
   },
@@ -1183,7 +1183,7 @@ export const travelPassions = [
     name: "4-Wheeler Motorcycle Guide",
     rating: "4.6",
     number_of_reviews: 147,
-    image: `${process.env.PUBLIC_URL}/images/atv/motorra-4goma.jpeg`,
+    image: `${process.env.PUBLIC_URL}/images/atv/safari.jpg`,
   },
 ];
 
