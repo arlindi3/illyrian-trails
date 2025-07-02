@@ -48,7 +48,7 @@ const ConfirmBooking = () => {
   }
 
   const handleBooking = () => {
-    const phoneNumber = "355673869970";
+    const phoneNumber = "355692311606";
     const message = encodeURIComponent(
       `Hello, I would like to book the "${service.name}" in ${
         service.location || ""
@@ -1058,8 +1058,7 @@ const ConfirmBooking = () => {
               )}
             </div>
             {/* Group Pricing */}
-            {(service.price_1_person ||
-              service.price_2_person ||
+            {(service.price_2_person ||
               service.price_3_person ||
               service.price_4_person) && (
               <div className="w-full">
@@ -1067,7 +1066,7 @@ const ConfirmBooking = () => {
                   Group Pricing
                 </h4>
                 <div className="flex flex-col xs:flex-row sm:flex-row justify-center gap-2">
-                  {[1, 2, 3, 4].map((num) => (
+                  {[2, 3, 4].map((num) => (
                     <div
                       key={num}
                       className="bg-white dark:bg-gray-800 rounded-xl px-3 py-2 shadow border border-gray-200 dark:border-gray-700 flex flex-col items-center min-w-[60px]"

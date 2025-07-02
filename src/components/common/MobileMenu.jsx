@@ -110,8 +110,8 @@ const MobileMenu = () => {
                         setMenuOpen={setMenuOpen}
                       />
                       <SubLink
-                        label="4 Wheel Motors"
-                        to="/guides/4wheel"
+                        label="Atv's and 4x4"
+                        to="/atv"
                         setMenuOpen={setMenuOpen}
                       />
                       <SubLink

@@ -28,6 +28,18 @@ const Home = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10 pointer-events-none z-10" />
         <div className="relative z-20 flex flex-col items-center justify-center text-center px-4 mt-24 md:mt-0">
+          <span
+            className="text-lg md:text-xl font-extrabold text-primary-400 tracking-widest mb-2 animate-fadeInDown uppercase"
+            style={{
+              fontFamily:
+                "'Inter', 'Montserrat', 'Segoe UI', Arial, sans-serif",
+              letterSpacing: "0.22em",
+              fontWeight: 700,
+              textTransform: "uppercase",
+            }}
+          >
+            PRIVATE TOURS
+          </span>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate-fadeInDown">
             Adventure <span className="text-primary-400">Nature</span> Culture
           </h1>
@@ -43,7 +55,7 @@ const Home = () => {
           </Link>
           <Link
             to="/contact"
-            className="bg-white/90 hover:bg-white text-primary-700 dark:bg-primary-400 dark:hover:bg-primary-500 dark:text-white font-semibold py-2 px-6 rounded shadow transition"
+            className="bg-white/90 hover:bg-white text-primary-700 dark:bg-primary-400 dark:hover:bg-primary-500 dark:text-black font-semibold py-2 px-6 rounded shadow transition border border-primary-400 dark:border-white"
           >
             Contact Us
           </Link>

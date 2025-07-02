@@ -5,7 +5,7 @@ const WhatsAppButton = () => {
   return (
     <div className="fixed bottom-6 right-8 z-50 flex flex-col items-center space-y-2">
       <a
-        href="https://wa.me/355673869970"
+        href="https://wa.me/355692311606"
         className="bg-gradient-to-br from-green-400 to-green-600 hover:from-green-500 hover:to-green-700 text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl shadow-2xl transition-transform duration-200 hover:scale-110 border-4 border-white dark:border-gray-800"
         target="_blank"
         rel="noopener noreferrer"
