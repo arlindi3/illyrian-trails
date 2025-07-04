@@ -149,8 +149,15 @@ const Footer = () => {
       <div className="text-center text-muted mt-6 py-3 border-t dark:border-dark">
         <p>
           Created By{" "}
-          <span className="text-primary font-semibold">Arlind Drabo</span> | All
-          Rights Reserved. &copy;{new Date().getFullYear()}
+          <a
+            href="https://www.instagram.com/aura.brand.studio/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary font-semibold hover:underline"
+          >
+            AuraBrand Studio
+          </a>{" "}
+          | All Rights Reserved. &copy;{new Date().getFullYear()}
         </p>
       </div>
     </div>

@@ -10,7 +10,7 @@ import {
   carRentals,
   horsebackGuides,
 } from "../data/dummyData";
-import { useState } from "react";
+import React, { useState } from "react";
 
 const ConfirmBooking = () => {
   const { type, id } = useParams();
@@ -30,6 +30,19 @@ const ConfirmBooking = () => {
     (item) => String(item.id) === String(id) && item.type === type
   );
   const [selectedImg, setSelectedImg] = useState(service?.gallery?.[0] || "");
+  const mainImgRef = React.useRef(null);
+
+  const handleGalleryImgClick = (img) => {
+    setSelectedImg(img);
+    setTimeout(() => {
+      if (mainImgRef.current) {
+        mainImgRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }, 50);
+  };
 
   if (!service) {
     return (
@@ -65,6 +78,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-gray-200 dark:border-gray-700"
@@ -76,17 +90,6 @@ const ConfirmBooking = () => {
                   <FaMapMarkerAlt className="text-2xl" />
                   <span>{service.location}</span>
                 </div>
-                {/* <div className="flex items-center gap-3 mb-4">
-                  {service.rating && <FaStar className="text-yellow-400" />}
-                  {service.rating && (
-                    <span className="font-bold">{service.rating}</span>
-                  )} */}
-                {/* {service.number_of_reviews && (
-                    <span className="text-sm">
-                      ({service.number_of_reviews} reviews)
-                    </span>
-                  )} */}
-                {/* </div> */}
                 <div className="mb-4">
                   <span className="font-semibold text-lg">
                     €{service.price}
@@ -113,7 +116,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -168,6 +171,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={
                 selectedImg ||
                 (service.gallery && service.gallery.length > 0
@@ -246,7 +250,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -296,12 +300,12 @@ const ConfirmBooking = () => {
 
   // Custom layout for fishing guides
   if (service.type === "fishing") {
-    // Assume service.price_1_4 and service.price_5_8 are the prices for 1-4 and 5-8 persons
     return (
       <div className="min-h-screen pt-24 px-4 md:px-10 pb-16 bg-white dark:bg-gray-900">
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-blue-200 dark:border-blue-700"
@@ -363,7 +367,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -418,6 +422,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-orange-200 dark:border-orange-700"
@@ -516,6 +521,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-gray-200 dark:border-gray-700"
@@ -565,7 +571,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -620,6 +626,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt={service.name}
               className="w-full md:w-2/3 h-[400px] object-cover rounded-3xl shadow-xl border-4 border-yellow-200 dark:border-yellow-700"
@@ -672,7 +679,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -728,6 +735,7 @@ const ConfirmBooking = () => {
         <div className="max-w-4xl mx-auto space-y-10">
           <div className="flex flex-col md:flex-row gap-8">
             <img
+              ref={mainImgRef}
               src={
                 selectedImg ||
                 (service.gallery && service.gallery.length > 0
@@ -795,7 +803,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
@@ -882,6 +890,7 @@ const ConfirmBooking = () => {
           {/* Main Image */}
           <div className="md:col-span-2 rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-200 dark:border-gray-700 relative">
             <img
+              ref={mainImgRef}
               src={selectedImg || service.image}
               alt="Selected"
               className="w-full h-[420px] object-cover object-center transition-all duration-300"
@@ -900,7 +909,7 @@ const ConfirmBooking = () => {
                 {service.gallery.map((img, idx) => (
                   <button
                     key={idx}
-                    onClick={() => setSelectedImg(img)}
+                    onClick={() => handleGalleryImgClick(img)}
                     className={`rounded-xl overflow-hidden border-2 transition-all duration-200 shadow-sm ${
                       selectedImg === img
                         ? "border-emerald-500 scale-105 ring-2 ring-emerald-300"
