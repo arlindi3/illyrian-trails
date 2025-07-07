@@ -266,6 +266,39 @@ const ConfirmBooking = () => {
                   </button>
                 ))}
               </div>
+              {/* Show all videos if present as array or single string */}
+              {service.type === "boat" && service.videos && (
+                <div className="mt-4 flex flex-row flex-wrap gap-4 justify-center">
+                  {(Array.isArray(service.videos)
+                    ? service.videos
+                    : [service.videos]
+                  ).map(
+                    (videoUrl, idx) =>
+                      videoUrl && (
+                        <div
+                          key={idx}
+                          className="w-[140px] sm:w-[160px] md:w-[180px]"
+                        >
+                          <video
+                            controls
+                            className="w-full rounded-xl shadow"
+                            style={{ maxHeight: 110, objectFit: "contain" }}
+                          >
+                            <source src={videoUrl} type="video/mp4" />
+                            Your browser does not support the video tag.
+                          </video>
+                          <div className="text-center text-xs mt-2 text-gray-500 dark:text-gray-300">
+                            Speed Boat Video
+                            {Array.isArray(service.videos) &&
+                            service.videos.length > 1
+                              ? ` ${idx + 1}`
+                              : ""}
+                          </div>
+                        </div>
+                      )
+                  )}
+                </div>
+              )}
             </div>
           )}
           <div className="grid md:grid-cols-2 gap-8">
