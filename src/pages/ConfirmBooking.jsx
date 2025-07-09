@@ -301,6 +301,25 @@ const ConfirmBooking = () => {
               )}
             </div>
           )}
+          {/* Itinerary for speed boat tours */}
+          {service.type === "boat" && service.itinerary && (
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8">
+              <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
+                <span className="inline-block w-2 h-6 bg-emerald-400 rounded-full mr-2"></span>
+                Itinerary
+              </h2>
+              <ul className="space-y-4">
+                {service.itinerary.map((item, idx) => (
+                  <li key={idx} className="flex gap-4 items-start">
+                    <span className="font-semibold min-w-[80px]">
+                      {item.time}
+                    </span>
+                    <span>{item.activity}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
           <div className="grid md:grid-cols-2 gap-8">
             {service.included && (
               <div>

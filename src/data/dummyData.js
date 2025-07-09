@@ -340,6 +340,7 @@ export const speedBoatData = [
     ],
     // video: `${process.env.PUBLIC_URL}/videos/quicksilver-805.mp4`,
     price: "200",
+    time: "hour",
     price_1_4_persons: "200",
     price_5_8_persons: "300",
     rating: 4.9,
@@ -353,6 +354,59 @@ export const speedBoatData = [
       { time: "11:00", activity: "Return to marina" },
     ],
     included: ["Skipper", "Life jackets", "Fuel", "Music system"],
+    notIncluded: ["Food & drinks", "Towels"],
+  },
+  {
+    id: 2,
+    type: "boat",
+    name: "Karaburun & Sazan Boat Tour – Full Day Escape",
+    location: "Durrës Marina",
+    description:
+      "This scenic cruise combines history, nature, and beach time into one unforgettable day. Perfect for families, couples, or groups of friends who want to explore Albania’s stunning southern coast by sea.",
+    image: `${process.env.PUBLIC_URL}/images/speedboat/boatVlore3.jpeg`,
+    gallery: [
+      `${process.env.PUBLIC_URL}/images/speedboat/boatVlore1.jpeg`,
+      `${process.env.PUBLIC_URL}/images/speedboat/boatVlore2.jpeg`,
+      `${process.env.PUBLIC_URL}/images/speedboat/boatVlore3.jpeg`,
+    ],
+    videos: [
+      `${process.env.PUBLIC_URL}/videos/boatVlore1.mp4`,
+      `${process.env.PUBLIC_URL}/videos/boatVlore2.mp4`,
+      `${process.env.PUBLIC_URL}/videos/boatVlore3.mp4`,
+    ],
+    // video: `${process.env.PUBLIC_URL}/videos/quicksilver-805.mp4`,
+    price: "60",
+    // price_1_4_persons: "200",
+    // price_5_8_persons: "300",
+    rating: 4.9,
+    time: "day tour",
+    number_of_reviews: 110,
+    duration: "by agreement",
+    language: "English, Albanian",
+    itinerary: [
+      { time: "08:00", activity: "Departure from Durrës or Tirana" },
+      { time: "08:30", activity: "Coffe before the trip" },
+      { time: "10:00", activity: "Departure from Vlora Marine" },
+      {
+        time: "",
+        activity:
+          "First stop: Sazan Island – explore the abandoned military base and rich marine views",
+      },
+      {
+        time: "",
+        activity:
+          "Panoramic ride to Haxhi Ali Cave – admire its natural beauty and legends",
+      },
+      {
+        time: "",
+        activity:
+          "Anchor at Shën Vasil Beach, Karaburun Peninsula – relax, swim, and sunbathe",
+      },
+      { time: "17:00", activity: "Departure from the beach" },
+      { time: "17:30", activity: "Return to Vlorë Port" },
+      { time: "19:30", activity: "Return to Durrës or Tirana" },
+    ],
+    included: ["Guider", "Security", "Fuel", "Music system"],
     notIncluded: ["Food & drinks", "Towels"],
   },
 ];

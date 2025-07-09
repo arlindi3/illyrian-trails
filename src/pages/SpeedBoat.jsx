@@ -1,10 +1,12 @@
-import SpeedBoad from "../banners/quckSilver.jpg";
+// import SpeedBoad from "../images/speedboat/boatVlore1.jpeg";
+// import SpeedBoad from "../public/images/speedboat/boatVlore3.jpeg";
 // import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { speedBoatData } from "../data/dummyData";
 import { Explore } from "../components/home";
 
 const SpeedBoat = () => {
+  const SpeedBoad = "images/speedboat/boatVlore2.jpeg";
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-card-dark dark:to-gray-900">
       {/* Banner */}
@@ -20,8 +22,8 @@ const SpeedBoat = () => {
             Speed Boat Adventures
           </h1>
           <p className="mt-4 text-lg md:text-2xl text-white/90 font-medium max-w-2xl">
-            Experience the thrill of Albania’s coastline with our top-rated
-            speed boat tours.
+            Experience the thrill of Albania’s coastline with our top-rated boat
+            tours.
           </p>
         </div>
       </div>
@@ -29,10 +31,10 @@ const SpeedBoat = () => {
         <div className="pt-10 pb-20">
           <div className="text-center mb-10">
             <h1 className="heading text-4xl md:text-5xl font-extrabold dark:text-white">
-              Book Your Speed Boat Tour
+              Book Your Boat Tour
             </h1>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              The most popular speed boat experiences on Illyrian Trails
+              The most popular boat experiences on Illyrian Trails
             </p>
           </div>
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
@@ -46,10 +48,12 @@ const SpeedBoat = () => {
                 number_of_reviews,
                 price,
                 description,
+                time,
               }) => (
-                <div
+                <Link
                   key={id}
-                  className="bg-white dark:bg-card-dark rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:scale-[1.02] transform transition-all"
+                  to={`/${type}/${id}/confirm-booking`}
+                  className="bg-white dark:bg-card-dark rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:scale-[1.02] transform transition-all block"
                 >
                   <div className="relative group">
                     <img
@@ -79,18 +83,15 @@ const SpeedBoat = () => {
                           €{price}
                         </span>
                         <span className="text-xs opacity-80 dark:text-gray-300 ml-1">
-                          /hour
+                          {time}
                         </span>
                       </div>
-                      <Link
-                        to={`/${type}/${id}/confirm-booking`}
-                        className="btn btn-primary px-4 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-secondaryYellow hover:text-gray-900 transition-all duration-200 font-semibold text-sm"
-                      >
-                        Book Now
-                      </Link>
+                      <span className="btn btn-primary px-4 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-secondaryYellow hover:text-gray-900 transition-all duration-200 font-semibold text-sm">
+                        See More
+                      </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             )}
           </div>

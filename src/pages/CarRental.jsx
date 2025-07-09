@@ -47,15 +47,16 @@ const CarRental = () => {
                 price,
                 description,
               }) => (
-                <div
+                <Link
                   key={id}
-                  className="bg-white dark:bg-card-dark rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:scale-[1.02] transform transition-all"
+                  to={`/${type}/${id}/confirm-booking`}
+                  className="bg-white dark:bg-card-dark rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 flex flex-col border border-gray-100 dark:border-gray-800 hover:-translate-y-1 hover:scale-[1.02] transform transition-all block"
                 >
                   <div className="relative group">
                     <img
                       src={image}
                       alt={name}
-                      className="w-full h-80 object-cover rounded-t-3xl group-hover:brightness-90 transition"
+                      className="w-full h-80 object-cover object-center rounded-t-3xl group-hover:brightness-90 transition"
                     />
                     {/* <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-900/80 px-4 py-1.5 rounded-full flex items-center gap-1 shadow text-base font-semibold">
                       <FaStar className="text-secondaryYellow" />
@@ -82,15 +83,12 @@ const CarRental = () => {
                           /Day
                         </span>
                       </div>
-                      <Link
-                        to={`/${type}/${id}/confirm-booking`}
-                        className="btn btn-primary px-4 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-secondaryYellow hover:text-gray-900 transition-all duration-200 font-semibold text-sm"
-                      >
-                        Book Now
-                      </Link>
+                      <span className="btn btn-primary px-4 py-2 rounded-full shadow-lg hover:scale-105 hover:bg-secondaryYellow hover:text-gray-900 transition-all duration-200 font-semibold text-sm">
+                        See More
+                      </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               )
             )}
           </div>
