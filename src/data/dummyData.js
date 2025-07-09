@@ -54,7 +54,7 @@ export const horsebackGuides = [
       `${process.env.PUBLIC_URL}/images/horse/horse-ride.jpg`,
     ],
     // video: `${process.env.PUBLIC_URL}/videos/horseback-tour.mp4`,
-    price: "85",
+    price: "70",
     rating: 4.9,
     number_of_reviews: 54,
     duration: "2.5 hours",
@@ -588,7 +588,7 @@ export const packagesData = [
       "Suitable for All Levels",
       "Photo Opportunities",
     ],
-    price: "85",
+    price: "70",
     reviews: 73,
   },
   {
